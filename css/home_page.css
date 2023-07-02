@@ -1,0 +1,14 @@
+body{
+    background-image: url("../media/svg/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 60vh;
+    width: auto;
+}

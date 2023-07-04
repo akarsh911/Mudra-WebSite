@@ -23,10 +23,15 @@ body{
   margin-bottom: 50px;
   font-style: italic;
 }
+.row_heading hove h2{
+  transform: scale(1.05);
+}
 
 .row_heading h2{
   font-size: 70px;
   font-weight: 600;
+  transition: transform 1s;
+
 }
 
 .our-team .team-row {
@@ -139,5 +144,18 @@ body{
 .socials a:hover i {
   color: #fff;
   background-color: #355c7d;
+}
+
+.second{
+  margin-left: 25%;
+  height: 450px;
+  width: 800px;
+  background-color: aliceblue;
+  margin-bottom: 40px;
+}
+.second img{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
 

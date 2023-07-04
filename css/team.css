@@ -33,7 +33,7 @@ ul{
 }
 .our-webcoderskull .cnt-block:hover {
     box-shadow:/* 0px 0px 10px rgba(0,0,0,0.3)*/ red;
-    border: 20px;
+    border: px;
 
 }
 .practice-area .inner h3{ 
@@ -56,13 +56,13 @@ ul{
 .our-webcoderskull{
   background-image: url("http://www.webcoderskull.com/img/right-sider-banner.png") ;
   background-repeat: no-repeat;
+  height: 100%;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content:space-evenly;
   flex-wrap: wrap;
 }
-
 
 
 .our-webcoderskull .cnt-block{ 

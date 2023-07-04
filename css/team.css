@@ -124,7 +124,7 @@ ul{
 
 .box_title{
     color: #fff;
-    font-size: 52.52px;
+    font-size: 82.52px;
     line-height: 95px;
     font-weight: 400;
     text-align: center;
@@ -134,13 +134,14 @@ ul{
 }
 
 .second_image{
-    width: 900px;
-    height: 400px;
+    width: 1000px;
+    height: 500px;
     background-color: #767676;
+   
 }
 .second_image img{
-    width: 900px;
-    height: 400px;
+    width: 1000px;
+    height: 500px;
     padding: 10px;
 
 }

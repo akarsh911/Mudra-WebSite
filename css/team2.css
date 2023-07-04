@@ -1,12 +1,15 @@
 body {
     font-family: tahoma;
-    height: 100vh;
+    height: 100%;
     background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210224/pngtree-blue-abstract-background-business-image_564246.jpg);
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     display: flex;
-    align-items: center;
+    align-items: center; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;      
   }
+  
   /* .row{
     display: flex;
     align-items: center;
@@ -21,8 +24,25 @@ body {
     font-weight: 400;
     text-align: center;
     margin: 0 0 20px;
+    margin-top: 10px;
     padding-bottom: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase;
+    position: absolute;
+    top: 25px;
+    right: 45%; */
+    transition: all 0.3s linear 0s;
+  }
+  .heading_text h1{
+    color: white;
+    font-size: 65.52px;
+    line-height: 95px;
+    font-weight: 400;
+    /* text-align: center; */
+    /* margin: 0 0 20px; */
+  }
+
+  .heading_text :hover{
+    transform: scale(1.05);
   }
   
   .our-team {

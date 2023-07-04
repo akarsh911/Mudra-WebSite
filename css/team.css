@@ -1,200 +1,296 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+    /* background: #7094e2; */
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210224/pngtree-blue-abstract-background-business-image_564246.jpg);
+    background-size: cover;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+}
+.team {
+    background: #4a75b9;
+    padding: 5em 0;
+}
 
-  
-
-
-
-.row.heading h2 {
-    color: #fff;
-    font-size: 52.52px;
-    line-height: 95px;
-    font-weight: 400;
+.team-grids{
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
-    margin: 0 0 40px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap; */
 }
 
-ul{
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-.heading.heading-icon {
-    display: block;
-    transition: transform 0.5s;
-}
-.heading.heading-icon :hover{
-    transform: scale(1.05);
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
 }
 
-
-.padding-lg {
-	display: block;
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-.practice-area.padding-lg {
-    padding-bottom: 55px;
-    padding-top: 55px;
-}
-.practice-area .inner{ 
-     border:1px solid #999999; 
-	 text-align:center; 
-	 margin-bottom:28px; 
-	 padding:40px 25px;
-}
-.our-webcoderskull .cnt-block:hover {
-    box-shadow:/* 0px 0px 10px rgba(0,0,0,0.3)*/ red;
-    border: 100px;
-
-}
-.practice-area .inner h3{ 
-    color:#3c3c3c; 
-	font-size:24px; 
-	font-weight:500;
-	font-family: 'Poppins', sans-serif;
-	padding: 10px 0;
-}
-.practice-area .inner p{ 
-    font-size:14px; 
-	line-height:22px; 
-	font-weight:400;
-}
-.practice-area .inner img{
-	display:inline-block;
-}
-.img-responsive{
-    top:-50px; 
-    left:-35px; 
-    display:block; 
-    z-index:999; 
-    cursor: pointer; 
-/* -webkit-transition-property: all; 
--webkit-transition-duration: 0.3s; 
--webkit-transition-timing-function: ease;  */
-} 
-
- 
-.img-responsive:hover {
-   border: #337ab7;
-    border-width: 10px;
-    transform: scale(1.25); 
-
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
 }
 
-
-.our-webcoderskull{
-  background-image: url("http://www.webcoderskull.com/img/right-sider-banner.png") ;
-  background-repeat: no-repeat;
-  height: 100%;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content:space-evenly;
-  flex-wrap: wrap;
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
-
-
-.our-webcoderskull .cnt-block{ 
-   float:left; 
-   width:100%; 
-   background:#fff; 
-   padding:30px 20px; 
-   text-align:center; 
-   border:2px solid #d5d5d5;
-   margin: 0 0 28px;
-}
-.our-webcoderskull .cnt-block figure{
-   width:148px; 
-   height:148px; 
-   border-radius:100%; 
-   display:inline-block;
-   margin-bottom: 15px;
-}
-.our-webcoderskull .cnt-block img{ 
-   width:148px; 
-   height:148px; 
-   border-radius:100%; 
-}
-
-
-
-.our-webcoderskull .cnt-block h3{ 
-   color:#2a2a2a; 
-   font-size:20px; 
-   font-weight:500; 
-   padding:6px 0;
-   text-transform:uppercase;
-}
-.our-webcoderskull .cnt-block h3 a{
-  text-decoration:none;
-	color:#2a2a2a;
-}
-.our-webcoderskull .cnt-block h3 a:hover{
-	color:#337ab7;
-    font-weight: 400;
-}
-.our-webcoderskull .cnt-block p{ 
-   color:#2a2a2a; 
-   font-size:13px; 
-   line-height:20px; 
-   font-weight:400;
-}
-
-
-.our-webcoderskull .cnt-block .follow-us{
-	margin:20px 0 0;
-}
-.our-webcoderskull .cnt-block .follow-us li{ 
-    display:inline-block; 
-	width:auto; 
-	margin:0 5px;
-}
-.our-webcoderskull .cnt-block .follow-us li .fa{ 
-   font-size:24px; 
-   color:#767676;
-}
-.our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
-   color:#025a8e;
-}
-
-.box_title{
-    color: #fff;
-    font-size: 82.52px;
-    line-height: 95px;
-    font-weight: 400;
+h3.title {
+    color: #F6F1F1;
+    font-size: 50px;
     text-align: center;
-    margin: 0 0 40px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    transition: transform .2s; /* Animation */
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-style: italic;
+}
+.team-grid {
+    text-align: center;
+}
+.col-xs-4 {
+    width: 33.33333333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/*-- Team --*/
+
+.team {
+    background: #19A7CE;
+    padding: 5em 0;
 }
 
-.box_title :hover{
-    transform: scale(1.05);
+.team-grid {
+    text-align: center;
 }
 
-.second_image{
-    width: 1000px;
-    height: 500px;
-    background-color: #767676;
-    /* padding: 50px; */
-  /* background-color: green; */
-  transition: transform .2s; /* Animation */
-  /* width: 1000px;
-  height: 200px; */
-  margin: 0 auto; 
+.team-grid h4 {
+    font-size: 25px;
+    color: #000;
+    font-weight: 600;
+    margin: 40px 0 20px;
 }
 
-.second_image img{
-    width: 1000px;
-    height: 500px;
-    padding: 10px;
+.team-grid p {
+    color: #777;
+    font-size: 1em;
 }
 
-.second_image :hover{
-    transform: scale(1.05);
-   
-
+.social-nav li {
+    display: inline-block;
 }
 
+.social-nav a {
+    display: inline-block;
+    float: none;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    background: #000;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.model-3d-0 a {
+    background: #5C5B5B;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.model-3d-0 .front,
+.model-3d-0 .back {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    color: #fff;
+    background: #146C94;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateZ(18px);
+    -moz-transform: translateZ(18px);
+    -ms-transform: translateZ(18px);
+    -o-transform: translateZ(18px);
+    transform: translateZ(18px);
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.model-3d-0 .back {
+    font-size: 1em;
+    color: #fff;
+    -webkit-transform: rotateX(90deg) translateZ(18px);
+    -moz-transform: rotateX(90deg) translateZ(18px);
+    -ms-transform: rotateX(90deg) translateZ(18px);
+    -o-transform: rotateX(90deg) translateZ(18px);
+    transform: rotateX(90deg) translateZ(18px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.twitter .back,
+.facebook .back,
+.instagram .back,
+.pinterest .back {
+    background: #81cdfa;
+}
+
+.model-3d-0 a:hover {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.model-3d-0 a:hover .back {
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.stack img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    border: 10px solid #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.stack:last-of-type {
+    margin-right: 0;
+}
+
+/* Third stack example (One stack element rotated in the opposite direction) */
+
+.stack.twisted:before {
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+}
+
+.stack.twisted:after {
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+}
+
+/* Reset all rotations on hover */
+
+.stack:hover:before,
+.stack:hover:after,
+.team-grid:hover .stack:before,
+.team-grid:hover .stack:after {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+}
+
+/* Stacks creted by the use of generated content */
+
+.stack:before,
+.stack:after {
+    content: "";
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 10px solid #fff;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.3s all ease-out;
+    -moz-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    -ms-transition: 0.3s all ease-out;
+}
+
+.stack:before {
+    top: 4px;
+    z-index: -10;
+}
+
+/* 1st element in stack (behind image) */
+
+.stack:after {
+    top: 8px;
+    z-index: -20;
+}
+
+/* 2nd element in stack (behind image) */
+
+.stack {
+    float: none;
+    width: 92%;
+    margin: 3% 0% 8% 4%;
+    position: relative;
+    z-index: 1;
+}
+
+/*-- //Team --*/

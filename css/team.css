@@ -121,3 +121,27 @@ ul{
 .our-webcoderskull .cnt-block .follow-us li .fa:hover{ 
    color:#025a8e;
 }
+
+.box_title{
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.second_image{
+    width: 900px;
+    height: 400px;
+    background-color: #767676;
+}
+.second_image img{
+    width: 900px;
+    height: 400px;
+    padding: 10px;
+
+}
+

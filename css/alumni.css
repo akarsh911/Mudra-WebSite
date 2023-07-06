@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210224/pngtree-blue-abstract-background-business-image_564246.jpg);
+    background-image: url(https://img.freepik.com/free-photo/clear-yellow-wall_1258-105.jpg?size=626&ext=jpg&ga=GA1.1.1828213413.1688661225&semt=sph);
     background-size: cover;
     height: 100%;
 }
@@ -65,7 +65,7 @@ body{
     transition: all .5s;
   }
   .single-team:hover .team-content{
-    background: #000;
+    background: #86E5FF;
   }
   .single-team .team-content .team-info h3 {
     text-transform: uppercase;

@@ -1,0 +1,115 @@
+body{
+    background-image: url(https://img.freepik.com/free-photo/clear-yellow-wall_1258-105.jpg?size=626&ext=jpg&ga=GA1.1.1828213413.1688661225&semt=sph);
+    background-size: cover;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.section-title h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .section-title {
+    margin: 6% 0;
+  }
+  .section-title p {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight:bold;
+  }
+  .single-team{
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow:5px 5px 15px #000;
+    margin-bottom: 40px;
+  }
+  
+  .team-img{
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .team-img img{
+    width: 100%;
+    transition: .3s;
+  }
+  .single-team:hover .team-img img {
+    transform: scale(1.1);
+  }
+  .team-content {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    transition: all .4s;
+    background:#F5FEFD;
+    z-index:5;
+  }
+  .single-team:hover .team-content{
+    height: 150px;
+  }
+  .team-info {
+    padding: 5px 20px 5px 20px;
+    transition: all .5s;
+  }
+  .single-team:hover .team-content{
+    background: #86E5FF;
+  }
+  .single-team .team-content .team-info h3 {
+    text-transform: uppercase;
+    color:black;
+    font-size: 16px;
+    margin: 5px;
+  }
+  .single-team:hover .team-info h3{
+    color:beige;
+  }
+  .team-info p {
+    margin-top: 15px;
+    color: black;
+  }
+  .single-team-text p{
+    margin-top: 5px;
+  }
+  .team-text {
+    color:white;
+    padding: 0 10px 5px;
+  }
+
+  .team-text i{
+    line-height: 50px;
+  color: #616161;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  }
+
+  .team-text :hover{
+    color: #fff;
+    background-color: #355c7d;
+  }
+  
+  
+  
+  
+  
+ 

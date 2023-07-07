@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: 0px;
+
+}
+a{
+    text-decoration: none;
+}
+.top_bar {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    min-width: min-content;
+    width: 90vw;
+    height:10vh;
+    max-height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000000;
+    backdrop-filter: blur(15px);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo_img {
+    height: 90%;
+}
+
+.logo_text {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 30px;
+    padding-left: 1vw;
+}
+
+.side_logo {
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.right_logo {
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.community_btn {
+    font-family: 'Poppins', sans-serif;
+    border: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0px;
+    max-height: 10vh;
+    height: 35px;
+    width: 110px;
+    margin-right: 10px;
+    border-radius: 25px;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.container_yt {
+    padding-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.logo-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    /* Add any additional styles for your logo image */
+}
+/* Add styles for the fixed logo position in the header */
+/* Add styles for the fixed logo position in the header */
+
+.fixed-logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    transition:  transform 10s ease;
+}
+.community_btn:hover {
+    background-color: rgb(19, 84, 175);
+    cursor: pointer;
+}
+
+
+.left_align {
+    padding-left: 1vw;
+    font-size: 3vh;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.right_align {
+    padding-right: 2vw;
+    font-size: 3vh;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#user_name_topbar {
+    padding-left: 5px;
+}
+/* Add the required styles for the navbar and logo */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-wrapper {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+}
+
+.large {
+    height: 200px;
+}
+
+.fixed-logo .logo-img {
+    height: 50px;
+}
+@media screen and (min-width:400px) and (max-width:700px) {
+    .top_bar {
+        height: 8vh;
+        width: 96vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+
+    .logo_text {
+        font-size: 20px;
+    }
+
+    .logo_img {
+        height: 17vh;
+    }
+
+    .gandhi {
+        display: none;
+    }
+
+    .log_in_bt {
+        font-size: 16px;
+        padding: 10px;
+        height: 40px;
+        width: 100px;
+        border-radius: 25px;
+        margin-right: 0px;
+    }
+
+    .register {
+        font-size: 16px;
+        padding: 10px;
+        height: 40px;
+        width: 100px;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .top_bar {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        height: 8vh;
+        width: 96vw;
+    }
+
+    .register {
+        display: none;
+    }
+
+    .logo_text {
+        font-size: 20px;
+    }
+
+    .logo_img {
+        height: 80%;
+    }
+
+    .gandhi {
+        display: none;
+    }
+
+    .log_in_bt {
+        font-size: 16px;
+        padding: 10px;
+        height: 40px;
+        width: 100px;
+        border-radius: 25px;
+        margin-right: 0px;
+    }
+}

@@ -3,13 +3,18 @@ Result Skip Results Iframe body {
 }
 
 #otp-container {
-    background: rgba(0, 0, 0, .7);
+    background: url('../media/images/eventbg.jpg');
     overflow: hidden;
     position: fixed;
     top: 0;
+    height: 100vh;
+    width: 100vw;
     bottom: 0;
     left: 0;
-    right: 0
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo {
@@ -17,8 +22,6 @@ Result Skip Results Iframe body {
     -webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, .75);
     box-shadow: 0 0 6px 1px rgba(0, 0, 0, .75);
     display: block;
-    left: 50%;
-    top: 50px;
     position: absolute;
     height: 242px;
     margin-left: -91px;
@@ -27,9 +30,9 @@ Result Skip Results Iframe body {
 }
 
 .otp-callout {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 95px;
+    justify-content: center;
     opacity: 0
 }
 
@@ -53,9 +56,8 @@ Result Skip Results Iframe body {
 
 #logo {
     display: block;
-    height: 72px;
-    width: 162px;
-    margin: 0 auto 12px
+    width: 250px;
+    margin-right: 7vw;
 }
 
 #text {
@@ -103,7 +105,12 @@ Result Skip Results Iframe body {
 
 .loaded .otp-callout {
     -webkit-animation-name: presentcallout;
-    animation-name: presentcallout
+    animation-name: presentcallout;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    opacity: 0
 }
 
 .loaded #image-1 {
@@ -130,6 +137,7 @@ Result Skip Results Iframe body {
     -webkit-animation-name: movement5;
     animation-name: movement5
 }
+
 @-webkit-keyframes movement1 {
     0% {
         opacity: 0;

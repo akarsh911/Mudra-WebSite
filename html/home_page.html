@@ -1,75 +1,9 @@
-<!DOCTYPE html>
 <html>
 
 <head>
     <title>Scrolling Logo Transition</title>
     <link href="../css/header_style.css" rel="stylesheet" />
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            background-color: #000000;
-        }
-
-        .logo {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: auto;
-            height: 400px;
-            position: absolute;
-            transition: all 0.5s ease-in-out;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 80px;
-            background-color: #000000;
-            transition: all 0.5s ease-in-out;
-            opacity: 0;
-        }
-
-        #myVideo {
-            right: 0;
-            bottom: 0;
-            min-width: 100vw;
-            height: auto;
-            max-width: 100vw;
-            z-index: -11;
-        }
-
-        .navbar .logo {
-            width: auto;
-            z-index: 5;
-            height: 500px;
-            margin: 20px;
-            transition: all 0.5s ease-in-out;
-
-        }
-
-        .content {
-            margin-top: 300px;
-            /* To create scrollable content */
-            height: 2000px;
-        }
-
-        .logo2 {
-            width: auto;
-            height: 100%;
-            z-index: 1000;
-            height: 80px;
-        }
-    </style>
+    <link href="/css/home_page.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -79,30 +13,27 @@
     <video autoplay muted loop id="myVideo" class="video">
         <source src="../media/MUDRA.mp4" type="video/mp4">
     </video>
-    <div class="navbar">
+    <div class="navbarm">
 
         <div class="right_logo">
-            <a href="../html/members.html"><button class="community_btn" id="ip2">Events</button></a>
-            <a href="./projects.html"><button class="community_btn">Gallery</button></a>
-            <a href="../html/dashboard.html">
+            <a href="/html/events.html"><button class="community_btn" id="ip2">Events</button></a>
+            <a href="/"><button class="community_btn">Gallery</button></a>
+            <a href="/html/dashboard.html">
                 <div class="logo2">
                     <img src="../media/logo.png" alt="Logo">
                 </div>
             </a>
-            <a href="../html/home_page.html"><button class="community_btn">Team</button></a>
-            <a href="../php/logout_user.php"><button class="community_btn" id="ip1">Alumini</button></a>
+            <a href="/html/team.html"><button class="community_btn">Team</button></a>
+            <a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
         </div>
     </div>
 
-    <div class="content">
-        <!-- Scrollable content -->
-    </div>
 
     <script>
         window.addEventListener('scroll', function () {
             var logo = document.querySelector('.logo');
-            var navbar = document.querySelector('.navbar');
-            var video = document.querySelector('.video');
+            var navbar = document.querySelector('.navbarm');
+
             //alert(video.offsetHeight);
             if (window.pageYOffset > 10) {
                 logo.style.width = 'auto';
@@ -117,6 +48,222 @@
             }
         });
     </script>
+
+    <script src="https://kit.fontawesome.com/56f1776af2.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/css/1.css" rel="stylesheet">
+    <link href="/css/2.css" rel="stylesheet">
+    <link href="/css/3.css" rel="stylesheet">
+    <link href="/css/4.css" rel="stylesheet">
+    <link href="/css/5.css" rel="stylesheet">
+    <link href="/css/6.css" rel="stylesheet">
+    <link href="/css/7.css" rel="stylesheet">
+    <link href="/css/8.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Template Main CSS File -->
+    <link href="/css/9.css" rel="stylesheet">
+
+    <style type="text/css">
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: -50px;
+        }
+    </style>
+
+    <div class='wrapper'><i class="bx bx-info-circle" style="font-size:40px;color:blue;"></i>
+        <h1>&nbsp;About Us</h1>
+    </div>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container-fluid">
+
+            <div class="row">
+
+
+                <div
+                    class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                    <h3>CodePen is a social development environment.</h3>
+                    <p>At its heart, it allows you to write code in the browser, and see the results of it as you build.
+                        A
+                        useful and liberating online code editor for developers of any skill, and particularly
+                        empowering
+                        for people learning to code. We focus primarily on front-end languages like HTML, CSS,
+                        JavaScript,
+                        and preprocessing syntaxes that turn into those things.</p>
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-share-alt"></i></div>
+                        <h4 class="title"><a href="">CodePen is a community</a></h4>
+                        <p class="description">Most creations on CodePen are public and open source. They are living
+                            things
+                            that other people and the community can interact with, from a simple hearting, to leaving a
+                            comment, to forking and changing for their own needs.</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-happy-alt"></i></div>
+                        <h4 class="title"><a href="">CodePen a happy and healthy place for front-end designers and
+                                developers</a></h4>
+                        <p class="description">We're trying to make CodePen a happy and healthy place for front-end
+                            designers and developers and the people looking for them, while also being a damn fine place
+                            to
+                            code.</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-user-voice"></i></div>
+                        <h4 class="title"><a href="">People use CodePen for all sorts of things</a></h4>
+                        <p class="description">prototyping new ideas, reduced test cases for bugs, sending clients
+                            things to
+                            look at, evaluating potential hires, to finding inspiration. People also use CodePen as a
+                            sort
+                            of resume and portfolio, showing off their best design and development work.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    
+
+    <!-- Design on Dribbble: https://dribbble.com/shots/3967265-FAQ -->
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faqs-container">
+        <div class="faq active">
+            <h3 class="faq-title">
+                Why shouldn't we trust atoms?
+            </h3>
+            <p class="faq-text">
+                They make up everything.
+            </p>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">
+                What do you call someone with no body and no nose?
+            </h3>
+            <p class="faq-text">
+                Nobody knows.
+            </p>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">
+                What's the object-oriented way to become wealthy?
+            </h3>
+            <p class="faq-text">
+                Inheritance.
+            </p>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">
+                How many tickles does it take to tickle an octopus?
+            </h3>
+            <p class="faq-text">
+                Ten-tickles!
+            </p>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">
+                What is: 1 + 1?
+            </h3>
+            <p class="faq-text">
+                Depends on who are you asking.
+            </p>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- SOCIAL PANEL HTML -->
+    <div class="social-panel-container">
+        <div class="social-panel">
+            <p>Created with <i class="fa fa-heart"></i> by
+                <a target="_blank" href="https://florin-pop.com">Team Mudra</a>
+            </p>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h4>Get in touch on</h4>
+            <ul>
+                <li>
+                    <a href="https://www.patreon.com/florinpop17" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/florinpop1705" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/florinpop17" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/florinpop17" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/florinpop17" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button class="floating-btn">
+        Get in Touch
+    </button>
+
+
+
+<script src="/js/home_page.js"></script>
 </body>
 
 </html>

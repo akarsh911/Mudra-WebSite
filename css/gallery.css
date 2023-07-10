@@ -24,7 +24,6 @@ Result Skip Results Iframe body {
     display: block;
     position: absolute;
     height: 242px;
-    margin-left: -91px;
     width: 182px;
     opacity: 0
 }
@@ -57,7 +56,7 @@ Result Skip Results Iframe body {
 #logo {
     display: block;
     width: 250px;
-    margin-right: 7vw;
+ 
 }
 
 #text {

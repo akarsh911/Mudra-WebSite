@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/gallerys.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header_style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="navbarm">
+    
+        <div class="right_logo">
+            <a href="/html/events.html"><button class="community_btn" id="ip2">Events</button></a>
+            <a href="/"><button class="community_btn">Gallery</button></a>
+            <a href="/html/dashboard.html">
+                <div class="logo2">
+                    <img src="../media/logo.png" alt="Logo">
+                </div>
+            </a>
+            <a href="/html/team.html"><button class="community_btn">Team</button></a>
+            <a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
+        </div>
+    </div>
     <h1>Responsive gallery</h1>
     
     <div class="galerie">
@@ -101,5 +116,24 @@
         <img class="modal-content" id="modal-image">
     </div>
     <script src="/js/gallerys.js"></script>
+    <script>
+           window.addEventListener('scroll', function () {
+               // var logo = document.querySelector('.logo');
+                var navbar = document.querySelector('.navbarm');
+
+                //alert(video.offsetHeight);
+                if (window.pageYOffset > 10) {
+                 //   logo.style.width = 'auto';
+                   // logo.style.height = '0px';
+                    navbar.style.height = '80px';
+                    navbar.style.opacity = '1';
+                } else {
+                    //logo.style.width = 'auto';
+                  //  logo.style.height = '500px';
+                    navbar.style.height = '0';
+                    navbar.style.opacity = '0';
+                }
+            });
+    </script>
 </body>
 </html>

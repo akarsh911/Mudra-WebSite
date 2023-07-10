@@ -6,7 +6,11 @@
 
    body {
     background: url('../media/images/eventbg.jpg');
-       background-color: #f0f0f0;
+       background-color: black;
+       background-repeat: repeat;
+       background-size: cover;
+       overflow-x: hidden;
+       height: 100vh;
        font-family: 'Muli', sans-serif;
    }
 

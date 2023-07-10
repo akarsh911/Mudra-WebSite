@@ -60,8 +60,14 @@
   .button{
     display: flex; justify-content: space-evenly; align-items: center;
   }
-  #myCarousel .carousel-item a{    background: transparent;font-size:20px; color:#FFF; padding:13px 32px; display:inline-block; border-top: 3px solid #ffffff; border-radius: 5px;  }
-  #myCarousel .carousel-item a:hover{ border: 3px solid #ffffff; border-radius: 5px; } 
+  #myCarousel .carousel-item a{    background: transparent;font-size:20px; color:#FFF; padding:13px 32px; display:inline-block;   }
+  #myCarousel .carousel-item a:hover{
+    box-shadow: 10px 10px 20px rgba(242, 237, 237, 0.2);
+    color:rgb(54, 144, 246);
+    border-radius:10px;
+    
+    
+                                } 
   @media only screen and (max-width: 600px){
     #myCarousel .carousel-item a{
       font-size: 10px;
@@ -342,13 +348,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   
+   font-family: fantasy;
     
   }
   @media only screen and (max-width: 600px){
     .title1{
       margin-top: 30px;
-      
+      font-size:40px;
     }
   }
   
@@ -570,6 +576,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 30px;
     /* border: 3px solid #ECECEC;
     border-radius: 10px; */
   

@@ -25,7 +25,11 @@ body{
   overflow-x: hidden;
 }
 
-
+.col-md-3{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .col-md-6 h1{
     font-size: 70px;
     font-weight: bold;
@@ -39,7 +43,10 @@ body{
 }
   /*Team Section CSS*/
   .team-1-wrap{
-      position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+      /* position: relative;
       z-index: 1;
       overflow: hidden;
       text-align: center;
@@ -48,22 +55,24 @@ body{
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       -ms-flex-align: start;
-      align-items: flex-start;
+      align-items: flex-start; */
   }
   .team-style-2{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+
     margin-right: 20px;
     width: 265px;
-    display: flex;
+   
     
   }
   @media screen and (max-width: 600px){
     .team-style-2{
       width: 180px;
       padding: 10px;
+      
       /* display: flex;
       justify-content: space-evenly; */
     }
@@ -115,7 +124,10 @@ body{
       top: 0;
       left: 0;
       z-index: 3;
+     
   }
+ 
+  
   .team-1-wrap:hover .team-overly-content{
     opacity: 1;
       height: 100%;
@@ -178,24 +190,15 @@ body{
 
 
   .second{
-    margin-left: 25%;
-    height: 450px;
-    width: 800px;
-    background-color: rgb(110, 145, 176);
-    margin-bottom: 40px;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    
-  }
-  .second img{
-    height: 100%;
-    width: 100%;
-    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px;
   }
 
 
   .row_heading h1{
+    display: flex;
+    justify-content: space-evenly;
     color: wheat;
     font-size: 50px;
     text-align: center;

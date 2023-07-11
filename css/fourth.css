@@ -316,17 +316,69 @@ display:block;
 }
 
 
-@media screen and (max-width: 600px){
-    .team-block .inner-box .image img{
-        height: 50%;
-        width: 50%;
+@media screen and (max-width: 500px){
+
+
+
+
+    .row-clearfix{
+        display: block;
     }
 
 
-    .team-block .inner-box .image{
-        height: 50%;
-        width: 50%;
+    .inner-box.wow.fadeInLeft{
+        margin-left: 40px;
+        height: 250px;
+        width: 250px;
     }
+
+
+    .team-block.inner-box.image img{
+        height: 50%;
+    }
+
+
+    .team-block.col-lg-4 .col-md-6 .col-sm-12{
+        height: 20px;
+        width: 30px;
+    }
+
+
+    .team-block.col-lg-4 .col-md-6 .col-sm-12 .heading h1{
+        height: 20px;
+        font-size: smaller;
+        text-align: left;
+    }
+
+
+    .sec-title.centered{
+        display: block;
+        /* height: 20px; */
+        /* font-size: 10px; */
+        text-align: left;
+    }
+
+
+    .sec-title .title{
+        position:relative;
+        font-size:10px;
+        color:wheat;
+        display: flex;
+        font-weight:700;
+        font-size: 50px;
+        margin-bottom:12px;
+        text-transform:capitalize;
+        }
+
+
+    .heading{
+        display: block;
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+
+
    
 }
 
@@ -390,3 +442,5 @@ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, 
 background-image: -webkit-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
 background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
 }
+
+

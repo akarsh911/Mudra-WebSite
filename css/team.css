@@ -27,10 +27,16 @@ body{
 
 
 .col-md-6 h1{
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: bold;
     color: wheat;
 }
  
+@media screen and (max-width: 600px){
+  .col-md-6 h1{
+    font-size: 40px;
+  }
+}
   /*Team Section CSS*/
   .team-1-wrap{
       position: relative;
@@ -51,6 +57,16 @@ body{
     justify-content: space-evenly;
     margin-right: 20px;
     width: 265px;
+    display: flex;
+    
+  }
+  @media screen and (max-width: 600px){
+    .team-style-2{
+      width: 180px;
+      padding: 10px;
+      /* display: flex;
+      justify-content: space-evenly; */
+    }
   }
   .team-img{
     position: relative;
@@ -86,12 +102,12 @@ body{
       box-sizing: border-box;
       opacity: 0;
       will-change: opacity;
-      display: -ms-flexbox;
+      display: -ms-flexbox; 
       display: flex;
       -ms-flex-direction: column;
       flex-direction: column;
       -ms-flex-pack: center;
-      justify-content: center;
+      justify-content: space-evenly;
       padding-left: 10px;
       padding-right: 10px;
       text-align: center;
@@ -150,6 +166,15 @@ body{
     margin-bottom: 5px;
     color: white;
   }
+  @media screen and (max-width: 600px){
+    .team-info h4{
+      font-size: 10px;
+    }
+    .team-info p{
+      font-size: 8px;
+      margin-bottom: 2px;
+    }
+  }
 
 
   .second{
@@ -158,6 +183,9 @@ body{
     width: 800px;
     background-color: rgb(110, 145, 176);
     margin-bottom: 40px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
     
   }
   .second img{

@@ -3,6 +3,8 @@
   src: url(../fonts/Amsterdam\ Personal\ Use.ttf);
   font-family: breadleysans;
   src: url(../fonts/BreadleySans-Regular.ttf);
+  font-family: california paradise;
+  src: url(../fonts/California\ Paradise.otf);
 }
 #myCarousel .carousel-item .mask {
     /* position: absolute; */
@@ -27,28 +29,30 @@
   margin-bottom:15px;
   /* color:#FFF; */
   line-height:100%;
-  letter-spacing:0.5px;
-  font-weight:600;
+  
+  font-weight:400;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-family: 'Dancing Script', cursive;
+  
+   font-family: california paradise; 
   background: -webkit-linear-gradient(#fbbe07, #fefa0d);
+  letter-spacing: 1.5px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 4px 4px 4px #aaa;
+  /* text-shadow: 4px 4px 4px #232121; */
   }
   
   @media only screen and (max-width: 600px){
     #myCarousel h4{
       font-size:30px;
-      font-weight:400;
+      font-weight:300;
       padding: 20px;
     }
   }
   
   #myCarousel p{
-  font-size:18px;
+  font-size:25px;
   margin-bottom:15px;
   color:#d5d5d5;
   display: flex;
@@ -56,6 +60,7 @@
   align-items: center;
   padding: 5px;
   text-align: center;
+  font-family: 'Nothing You Could Do', cursive;
   }
   .button{
     display: flex; justify-content: space-evenly; align-items: center;
@@ -326,8 +331,9 @@
     justify-content: space-evenly;
     align-items: center;
     text-shadow: 4px 4px 4px #310bf0;
-  
-    font-family: breadleysans;
+   
+    font-family: 'Dancing Script', cursive; 
+    /* font-family: breadleysans;  */
     
   }
   @media only screen and (max-width: 600px){
@@ -339,7 +345,7 @@
   .title1 {
     font-size:80px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: var(--ls);
     position: relative;
     overflow: hidden;
@@ -348,7 +354,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   font-family: fantasy;
+    font-family: 'Dancing Script', cursive; 
     
   }
   @media only screen and (max-width: 600px){
@@ -369,6 +375,7 @@
     z-index: 2;
     mix-blend-mode: darken;
     pointer-events: none;
+   
   }
   
   .aurora__item {
@@ -528,7 +535,7 @@
     height: 100vh;
     margin: 0rem;
     overflow-x: hidden;
-    background-attachment: ;
+    /* background-attachment:fixed ; */
   }
   
   @keyframes rotate {

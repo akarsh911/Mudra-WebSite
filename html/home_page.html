@@ -8,12 +8,12 @@
 
 <body>
     <div class="logoc">
-    <div class="logo">
-        <img src="../media/logo.png" alt="Logo">
-    </div>
-    <video autoplay muted loop id="myVideo" class="video">
-        <source src="../media/MUDRA.mp4" type="video/mp4">
-    </video>
+        <div class="logo">
+            <img src="../media/logo.png" alt="Logo">
+        </div>
+        <video autoplay muted loop id="myVideo" class="video">
+            <source src="../media/MUDRA.mp4" type="video/mp4">
+        </video>
     </div>
     <div class="navbarm">
 
@@ -25,8 +25,16 @@
                     <img src="../media/logo.png" alt="Logo">
                 </div>
             </a>
-            <a href="/html/fourth.html"><button class="community_btn">Team</button></a>
             <a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">Team
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="/">4th Year</a>
+                    <a href="/">Core</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -49,6 +57,19 @@
                 navbar.style.opacity = '0';
             }
         });
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
     </script>
 
     <script src="https://kit.fontawesome.com/56f1776af2.js" crossorigin="anonymous"></script>
@@ -80,8 +101,8 @@
         }
     </style>
 
-    <div class='wrapper'><i class="bx bx-info-circle" style="font-size:40px;color:blue;"></i>
-        <h1>&nbsp;About Us</h1>
+    <div class='wrapper'>
+        <h1 style="color: white;">&nbsp;About Us</h1>
     </div>
 
     <!-- ======= About Section ======= -->
@@ -93,49 +114,50 @@
 
                 <div
                     class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                    <h3>CodePen is a social development environment.</h3>
-                    <p>At its heart, it allows you to write code in the browser, and see the results of it as you build.
-                        A
-                        useful and liberating online code editor for developers of any skill, and particularly
-                        empowering
-                        for people learning to code. We focus primarily on front-end languages like HTML, CSS,
-                        JavaScript,
-                        and preprocessing syntaxes that turn into those things.</p>
+                  
+                    <p>With every beat of the drum and sway of the dance MUDRA
+                    has been the testimony of Thapar's divine culture.It is the canvas where creativity and diversity intertwine to create
+                    an enriching and unforgettable experience.
+                    <br><br>
+                    We foster a spirit of inclusivity, embracing the unique stories and perspectives that each individual brings. Through a
+                    wide range of events, performances, and workshops, we provide a platform for students to explore their passions, refine
+                    their skills, and unleash their artistic potential.
+                    At MUDRA we firmly believe that the beauty of humanity lies in its diversity, and we strive to create an inclusive space
+                    where every voice is heard and appreciated.
+                    <br><br>
+                    Whether you have a flair for dance, a gift for music, a talent for theater, or a passion for visual arts, our society
+                    welcomes you with open arms,we also believe that art has the power to inspire, provoke thought, and unite people.
+                    <br><br>
+                    
+                    Amidst the hallowed halls of our institution, a multitude of cultural marvels unfurl, Mudranite ,Surnite and Playnite
+                    gives students a sigh of relief from their daily hectic academic schedules.
+                    <br><br>
+                    Followed by our three day flagship event "Izhaar",which is the largest cultural fest at thapar comprising of all the
+                    forms of Music Dance and Dramatics.During these three days
+                    the entire college feels the aroma of mesmerizing performances and satiating sounds coming right from OAT.
+                    <br>
+                    <br>
+                    
+                    MUDRA in itself isn't just about the performances and events; it's about the friendships and connections that are forged
+                    along the way. We are a close-knit community of like-minded individuals who share a deep appreciation for creativity and
+                    expression. Together, we support and encourage each other, pushing boundaries and challenging ourselves to reach new
+                    heights.
+                    <br>
+                    <br>    
+                    Unifying hearts and souls
+                </p>
 
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-share-alt"></i></div>
-                        <h4 class="title"><a href="">CodePen is a community</a></h4>
-                        <p class="description">Most creations on CodePen are public and open source. They are living
-                            things
-                            that other people and the community can interact with, from a simple hearting, to leaving a
-                            comment, to forking and changing for their own needs.</p>
-                    </div>
-
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-happy-alt"></i></div>
-                        <h4 class="title"><a href="">CodePen a happy and healthy place for front-end designers and
-                                developers</a></h4>
-                        <p class="description">We're trying to make CodePen a happy and healthy place for front-end
-                            designers and developers and the people looking for them, while also being a damn fine place
-                            to
-                            code.</p>
-                    </div>
-
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-user-voice"></i></div>
-                        <h4 class="title"><a href="">People use CodePen for all sorts of things</a></h4>
-                        <p class="description">prototyping new ideas, reduced test cases for bugs, sending clients
-                            things to
-                            look at, evaluating potential hires, to finding inspiration. People also use CodePen as a
-                            sort
-                            of resume and portfolio, showing off their best design and development work.</p>
-                    </div>
-
+                    
                 </div>
 
 
             </div>
-
+                <style>
+                    .row{
+                        color: white;
+                        text-align: center;
+                    }
+                </style>
         </div>
     </section><!-- End About Section -->
 
@@ -259,28 +281,14 @@
             <button class="close-btn"><i class="fas fa-times"></i></button>
             <h4>Get in touch on</h4>
             <ul>
+             
                 <li>
-                    <a href="https://www.patreon.com/florinpop17" target="_blank">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/florinpop1705" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/in/florinpop17" target="_blank">
+                    <a href="https://www.linkedin.com/company/mudra-society-thapar-university-patiala/" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://facebook.com/florinpop17" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/florinpop17" target="_blank">
+                    <a href="https://www.instagram.com/mudrasociety/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
@@ -292,7 +300,9 @@
     </button>
 
 
-
+    <div class="footer">
+            Made with <i class="fa fa-heart"></i> by team Mudra
+    </div>
     <script src="/js/home_page.js"></script>
 </body>
 

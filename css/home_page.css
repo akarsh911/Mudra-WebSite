@@ -26,7 +26,7 @@
 
    .faq {
        background-color: transparent;
-       border: 1px solid #9FA4A8;
+       border: 1px solid #ffffff;
        border-radius: 10px;
        padding: 30px;
        position: relative;
@@ -62,6 +62,7 @@
 
    .faq-title {
        margin: 0 35px 0 0;
+    
    }
 
    .faq-text {
@@ -96,7 +97,7 @@
    }
 
    .faq.active .faq-toggle {
-       background-color: #9FA4A8;
+       background-color: #ffffff;
    }
 
    .faq-toggle .fa-times {
@@ -108,7 +109,7 @@
    }
 
    .faq-toggle .fa-chevron-down {
-       color: #83888E;
+       color: #ffffff;
    }
 
    .faq.active .faq-toggle .fa-chevron-down {
@@ -146,7 +147,7 @@
 
    .social-panel button.close-btn {
        border: 0;
-       color: #97A5CE;
+       color: #ffffff;
        cursor: pointer;
        font-size: 20px;
        position: absolute;
@@ -185,7 +186,7 @@
 
    .social-panel h4 {
        margin: 20px 0;
-       color: #97A5CE;
+       color: #ffffff;
        font-family: 'Muli';
        font-size: 14px;
        line-height: 18px;

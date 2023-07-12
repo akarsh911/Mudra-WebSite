@@ -1,7 +1,9 @@
 <html lang="en">
     <head>
         <link href="../css/gallery.css" rel="stylesheet">
-        <title></title>
+        <link href="../css/header_style.css" rel="stylesheet">
+        <title>Gallery</title>
+        <script src="https://kit.fontawesome.com/56f1776af2.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>
             window.onload = function () {
@@ -10,6 +12,49 @@
         </script>
     </head>
     <body>
+        <div class="navbarm">
+        
+            <div class="right_logo">
+                <a href="/html/events.html"><button class="community_btn" id="ip2">Events</button></a>
+                <a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
+                <a href="/html/home_page.html">
+                    <div class="logo2">
+                        <img src="../media/logo.png" alt="Logo">
+                    </div>
+                </a>
+                <a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
+                <div class="dropdown">
+                    <button class="dropbtn">Team
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="/">4th Year</a>
+                        <a href="/">Core</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script>
+          var logo = document.querySelector('.logo');
+            var navbar = document.querySelector('.navbarm');
+            navbar.style.height = '80px';
+            navbar.style.opacity = '1';
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
         <div id="otp-container">
           <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/road.jpg" id="image-1" class="photo" alt="" onclick="window.location.href='/html/gallery1.html'">
           <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/tree_hugger.jpg" id="image-2" class="photo" alt="" onclick="window.location.href='/html/gallery2.html'">
@@ -27,6 +72,9 @@
                 cursor: pointer;
             }
         </style>
+        <div class="footer">
+            Made with <i class="fa fa-heart"></i> by team Mudra
+        </div>
     </body>
 </html>
 

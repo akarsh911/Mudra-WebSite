@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/gallerys.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/header_style.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/56f1776af2.js" crossorigin="anonymous"></script>
+    <title>Gallery</title>
 </head>
+
 <body>
     <div class="navbarm">
-    
+
         <div class="right_logo">
             <a href="/html/events.html"><button class="community_btn" id="ip2">Events</button></a>
             <a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
@@ -18,13 +21,53 @@
                     <img src="../media/logo.png" alt="Logo">
                 </div>
             </a>
-            <a href="/html/team.html"><button class="community_btn">Team</button></a>
             <a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">Team
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="/">4th Year</a>
+                    <a href="/">Core</a>
+                </div>
+            </div>
         </div>
     </div>
 
+
+    <script>
+        window.addEventListener('scroll', function () {
+
+            var navbar = document.querySelector('.navbarm');
+
+            //alert(video.offsetHeight);
+            if (window.pageYOffset > 10) {
+
+                navbar.style.height = '80px';
+                navbar.style.opacity = '1';
+            } else {
+
+                navbar.style.height = '0';
+                navbar.style.opacity = '0';
+            }
+        });
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
     <h1>Izhaar Gallery</h1>
-    
+
     <div class="galerie">
         <div class="item">
             <a href="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
@@ -111,30 +154,16 @@
             </a>
         </div>
     </div>
-    
+
     <div id="modal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modal-image">
     </div>
     <script src="/js/gallerys.js"></script>
-    <script>
-           window.addEventListener('scroll', function () {
-               // var logo = document.querySelector('.logo');
-                var navbar = document.querySelector('.navbarm');
 
-                //alert(video.offsetHeight);
-                if (window.pageYOffset > 10) {
-                 //   logo.style.width = 'auto';
-                   // logo.style.height = '0px';
-                    navbar.style.height = '80px';
-                    navbar.style.opacity = '1';
-                } else {
-                    //logo.style.width = 'auto';
-                  //  logo.style.height = '500px';
-                    navbar.style.height = '0';
-                    navbar.style.opacity = '0';
-                }
-            });
-    </script>
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by team Mudra
+    </div>
 </body>
+
 </html>

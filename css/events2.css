@@ -38,10 +38,11 @@
   align-items: center;
   
   font-family: california paradise;
-  background: -webkit-linear-gradient(#fbbe07, #fefa0d);
-  letter-spacing: 1.5px;
-  -webkit-background-clip: text;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity:50%;
   
   }
   
@@ -51,9 +52,7 @@
       font-weight:300;
       padding: 20px;
     }
-    #myCarousel p{
-      font-size: 8px;
-    }
+   
   }
   
   #myCarousel p{
@@ -66,6 +65,9 @@
   padding: 5px;
   text-align: center;
   font-family: bodoni;
+  @media only screen and (max-width: 600px){
+    font-size: 15px;
+  }
   
   }
   .button{

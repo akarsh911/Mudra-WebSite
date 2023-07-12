@@ -42,7 +42,7 @@
   letter-spacing: 1.5px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* text-shadow: 4px 4px 4px #232121; */
+  
   }
   
   @media only screen and (max-width: 600px){
@@ -50,6 +50,9 @@
       font-size:30px;
       font-weight:300;
       padding: 20px;
+    }
+    #myCarousel p{
+      font-size: 8px;
     }
   }
   
@@ -63,14 +66,15 @@
   padding: 5px;
   text-align: center;
   font-family: bodoni;
-  /* font-family: 'Nothing You Could Do', cursive; */
+  
   }
   .button{
     display: flex; justify-content: space-evenly; align-items: center;
   }
   #myCarousel .carousel-item a{    background: transparent;font-size:20px; color:#FFF; padding:13px 32px; display:inline-block;   }
-  #myCarousel .carousel-item a:hover{
-    box-shadow: 10px 10px 20px rgba(242, 237, 237, 0.2);
+  #myCarousel .carousel-item a:hover{ 
+    text-decoration: none;
+    box-shadow: 10px 10px 20px rgba(242, 237, 237,0.1);
     color:rgb(54, 144, 246);
     border-radius:10px;
     
@@ -78,7 +82,7 @@
                                 } 
   @media only screen and (max-width: 600px){
     #myCarousel .carousel-item a{
-      font-size: 10px;
+      font-size: 15px;
       
     }
   }
@@ -245,27 +249,7 @@
   
   
   
-  /* .nav-links li a:hover {
-    border-bottom: 2px solid white;
-  } */
   
-  /* .head{
-    
-    height: 120px;
-    font-size: 50px;
-    font-weight: bolder;
-    display: flex;
-    justify-content: space-evenly;
-    color: #eaf0f4;
-    
-  }
-  @media only screen and (max-width: 600px){
-    .head{
-      height: 80px;
-    font-size: 40px;
-    font-weight: bold;
-    }
-  } */
    img {
     border: 5px solid #555;
     border-radius: 8px;
@@ -317,10 +301,8 @@
     
     /* border-bottom: 3px solid #555; */
   }
-  .br {
-    /* display: block; */
-    margin-bottom:50px;
-}
+  
+
   .title {
     font-size: var(--fs);
     font-weight: 800;
@@ -564,43 +546,15 @@
   }
   
   
-  /* .btn {
-    flex: 1 1 auto;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-   
-    box-shadow: 0 0 20px #080808;
-    border-radius: 10px;
-   }
-   .btn-1 {
-    background-image: linear-gradient(to right, #7465f6 0%, #0b0a0a 51%, #65f6cb 100%);
-  }
-  .btn:hover {
-    background-position: right center; 
-  } */
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-  }
+ 
+  
   .vdo{
       
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
-    /* border: 3px solid #ECECEC;
-    border-radius: 10px; */
-  
-  /* box-sizing: border-box; */
-     /* position: absolute;  */
+    
   } 
   
 

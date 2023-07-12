@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="../css/header_style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="navbarm">
-    
+
         <div class="right_logo">
             <a href="/html/events.html"><button class="community_btn" id="ip2">Events</button></a>
             <a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
@@ -23,8 +25,8 @@
         </div>
     </div>
 
-    <h1>Izhaar Gallery</h1>
-    
+    <h1>Brahmkosh Gallery</h1>
+
     <div class="galerie">
         <div class="item">
             <a href="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
@@ -111,30 +113,31 @@
             </a>
         </div>
     </div>
-    
+
     <div id="modal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modal-image">
     </div>
     <script src="/js/gallerys.js"></script>
     <script>
-           window.addEventListener('scroll', function () {
-               // var logo = document.querySelector('.logo');
-                var navbar = document.querySelector('.navbarm');
+        window.addEventListener('scroll', function () {
+            // var logo = document.querySelector('.logo');
+            var navbar = document.querySelector('.navbarm');
 
-                //alert(video.offsetHeight);
-                if (window.pageYOffset > 10) {
-                 //   logo.style.width = 'auto';
-                   // logo.style.height = '0px';
-                    navbar.style.height = '80px';
-                    navbar.style.opacity = '1';
-                } else {
-                    //logo.style.width = 'auto';
-                  //  logo.style.height = '500px';
-                    navbar.style.height = '0';
-                    navbar.style.opacity = '0';
-                }
-            });
+            //alert(video.offsetHeight);
+            if (window.pageYOffset > 10) {
+                //   logo.style.width = 'auto';
+                // logo.style.height = '0px';
+                navbar.style.height = '80px';
+                navbar.style.opacity = '1';
+            } else {
+                //logo.style.width = 'auto';
+                //  logo.style.height = '500px';
+                navbar.style.height = '0';
+                navbar.style.opacity = '0';
+            }
+        });
     </script>
 </body>
+
 </html>

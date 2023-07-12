@@ -5,6 +5,8 @@
   src: url(../fonts/BreadleySans-Regular.ttf);
   font-family: california paradise;
   src: url(../fonts/California\ Paradise.otf);
+  font-family: bodoni;
+  src: url(../fonts/Bodoni\ 72.ttc);
 }
 #myCarousel .carousel-item .mask {
     /* position: absolute; */
@@ -35,7 +37,7 @@
   justify-content: space-evenly;
   align-items: center;
   
-   font-family: california paradise; 
+  font-family: california paradise;
   background: -webkit-linear-gradient(#fbbe07, #fefa0d);
   letter-spacing: 1.5px;
   -webkit-background-clip: text;
@@ -60,7 +62,8 @@
   align-items: center;
   padding: 5px;
   text-align: center;
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: bodoni;
+  /* font-family: 'Nothing You Could Do', cursive; */
   }
   .button{
     display: flex; justify-content: space-evenly; align-items: center;
@@ -330,10 +333,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    text-shadow: 4px 4px 4px #310bf0;
-   
-    font-family: 'Dancing Script', cursive; 
-    /* font-family: breadleysans;  */
+    /* text-shadow: 4px 4px 4px #310bf0; */
+   letter-spacing: 7px;
+    font-family: bodoni;
+      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     
   }
   @media only screen and (max-width: 600px){
@@ -344,7 +350,7 @@
   
   .title1 {
     font-size:80px;
-    font-style: italic;
+  
     font-weight: 200;
     letter-spacing: var(--ls);
     position: relative;
@@ -354,7 +360,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: 'Dancing Script', cursive; 
+    font-family: bodoni;
+    letter-spacing: 7px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     
   }
   @media only screen and (max-width: 600px){
@@ -535,7 +546,7 @@
     height: 100vh;
     margin: 0rem;
     overflow-x: hidden;
-    /* background-attachment:fixed ; */
+     background-attachment:fixed ; 
   }
   
   @keyframes rotate {

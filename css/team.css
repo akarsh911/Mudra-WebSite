@@ -17,6 +17,7 @@ body{
    background-image: url(../media/images/eventbg.jpg);
    background-size: cover;
    background-repeat: repeat;
+   background-attachment: fixed;
 
 
    background-color: black;
@@ -70,7 +71,7 @@ body{
   }
   @media screen and (max-width: 600px){
     .team-style-2{
-      width: 180px;
+      width: 200px;
       padding: 10px;
       
       /* display: flex;
@@ -186,6 +187,8 @@ body{
       font-size: 8px;
       margin-bottom: 2px;
     }
+    
+
   }
 
 

@@ -11,7 +11,7 @@ body{
      background-size: cover;
      background-repeat: repeat;
 
-
+background-attachment: fixed;
      background-color: black;
     height: 100vh;
     margin: 0rem;

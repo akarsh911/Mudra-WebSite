@@ -62,7 +62,7 @@ body{
      background-image: url(../media/images/eventbg.jpg);
      background-size: cover;
      background-repeat: repeat;
-
+background-attachment: fixed;
      background-color: black;
     height: 100vh;
     margin: 0rem;

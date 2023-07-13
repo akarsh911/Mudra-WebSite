@@ -36,7 +36,7 @@ body{
    background-image: url(../media/images/eventbg.jpg);
    background-size: cover;
    background-repeat: repeat;
-
+  background-attachment: fixed;
    background-color: black;
   height: 100vh;
   margin: 0rem;
@@ -52,12 +52,34 @@ body{
 }
 
 .section-title h1 {
-    /* text-transform: uppercase; */
-    font-family: desired;
-    font-size: 80px;
-    font-weight: 700;
-    color: wheat;
-    letter-spacing: 2px;
+    
+    font-size: 100px;
+    font-weight: 800;
+   
+    
+    position: relative;
+    overflow: hidden;
+    
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+   letter-spacing: 7px;
+    font-family: bodoni;
+      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  }
+  @media only screen and (max-width: 600px){
+    .section-title h1 {
+      margin-top: 30px;
+      font-size: 40px;
+      letter-spacing: 2px;
+     
+    }
   }
   .section-title {
     margin: 6% 0;

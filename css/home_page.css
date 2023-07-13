@@ -130,10 +130,16 @@
    }
 
    .social-panel {
-       background-color: #fff;
+       /* background-color: #fff; */
        border-radius: 16px;
-       box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
-       border: 5px solid #001F61;
+       /* box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6); */
+       background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+     -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+       border-image:  radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+       border: 5px solid;
        display: flex;
        flex-direction: column;
        justify-content: center;
@@ -147,7 +153,11 @@
 
    .social-panel button.close-btn {
        border: 0;
-       color: #ffffff;
+       background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+     -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+       /* color: #ffffff; */
        cursor: pointer;
        font-size: 20px;
        position: absolute;
@@ -160,7 +170,11 @@
    }
 
    .social-panel p {
-       background-color: #001F61;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+       /* background-color: #001F61; */
        border-radius: 0 0 10px 10px;
        color: #fff;
        font-size: 14px;
@@ -180,7 +194,8 @@
    }
 
    .social-panel p a {
-       color: #FF7500;
+       background-color:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
        text-decoration: none;
    }
 
@@ -207,7 +222,7 @@
    .social-panel ul li a {
        border: 1px solid #DCE1F2;
        border-radius: 50%;
-       color: #001F61;
+       /* color: #001F61; */
        font-size: 20px;
        display: flex;
        justify-content: center;
@@ -215,18 +230,26 @@
        height: 50px;
        width: 50px;
        text-decoration: none;
+       background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+     -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
    }
 
    .social-panel ul li a:hover {
-       border-color: #FF6A00;
-       box-shadow: 0 9px 12px -9px #FF6A00;
+       border-color: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+       box-shadow: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
    }
 
    .floating-btn {
        border-radius: 26.5px;
-       background-color: #001F61;
-       border: 1px solid #001F61;
-       box-shadow: 0 16px 22px -17px #03153B;
+       background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+       border-image:  radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+      border: 1px solid;
        color: #fff;
        cursor: pointer;
        font-size: 16px;
@@ -236,19 +259,24 @@
        bottom: 20px;
        right: 20px;
        z-index: 999;
+       
+       
    }
 
    .floating-btn:hover {
-       background-color: #ffffff;
-       color: #001F61;
-   }
+       background-image: #ffffff;
+       color:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+    }
 
    .floating-btn:focus {
        outline: none;
    }
 
    .floating-text {
-       background-color: #001F61;
+       /* background-color: #001F61; */
        border-radius: 10px 10px 0 0;
        color: #fff;
        font-family: 'Muli';
@@ -262,7 +290,8 @@
    }
 
    .floating-text a {
-       color: #FF7500;
+       color: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
        text-decoration: none;
    }
 

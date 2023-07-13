@@ -165,6 +165,7 @@ background-attachment: fixed;
     justify-content:center;
     align-items: center;
     padding: 30px;
+    margin-right: 17px;
   }  
 
   .row_heading h1{

@@ -11,7 +11,47 @@
   <title>Document</title>
 </head>
 <body>
+	<div class="navbarm">
+	
+		<div class="right_logo">
+			<a href="/html/events.html"><button class="community_btn" id="ip2">Events</button></a>
+			<a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
+			<a href="/html/home_page.html">
+				<div class="logo2">
+					<img src="../media/logo.png" alt="Logo">
+				</div>
+			</a>
+			<a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
+			<div class="dropdown">
+				<button class="dropbtn">Team
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="/">Secretaries</a>
+					<a href="/">Core & Exbo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var logo = document.querySelector('.logo');
+		var navbar = document.querySelector('.navbarm');
+		navbar.style.height = '80px';
+		navbar.style.opacity = '1';
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
 
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function (e) {
+			if (!e.target.matches('.dropbtn')) {
+				var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+					myDropdown.classList.remove('show');
+				}
+			}
+		}
+	</script>
 	<section class="team-section mt-5">
 		<div class="container">
 		  <div class="row justify-content-center mb-5">
@@ -184,6 +224,46 @@
 		<img src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JvdXB8ZW58MHx8MHx8fDA%3D&w=1000&q=80 ">
 	  </div>
 
+<div class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with <i class="fa fa-heart"></i> by
+			<a target="_blank" href="https://florin-pop.com">Team Mudra</a>
+		</p>
+		<button class="close-btn"><i class="fas fa-times"></i></button>
+		<h4>Get in touch on</h4>
+		<ul>
 
+			<li>
+				<a href="https://www.linkedin.com/company/mudra-society-thapar-university-patiala/" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/mudrasociety/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<button class="floating-btn">
+	Get in Touch
+</button>
+<div class="footer">
+	Made with <i class="fa fa-heart"></i> by team Mudra
+</div>
+<script>
+	const floating_btn = document.querySelector('.floating-btn');
+	const close_btn = document.querySelector('.close-btn');
+	const social_panel_container = document.querySelector('.social-panel-container');
+
+	floating_btn.addEventListener('click', () => {
+		social_panel_container.classList.toggle('visible')
+	});
+
+	close_btn.addEventListener('click', () => {
+		social_panel_container.classList.remove('visible')
+	});
+</script>
 </body>
 </html>

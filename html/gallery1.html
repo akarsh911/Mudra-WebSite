@@ -12,7 +12,7 @@
 
 <body>
     <div class="navbarm">
-
+    
         <div class="right_logo">
             <a href="/html/events.html"><button class="community_btn" id="ip2">Events</button></a>
             <a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
@@ -27,8 +27,8 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="myDropdown">
-                    <a href="/">4th Year</a>
-                    <a href="/">Core</a>
+                    <a href="/">Secretaries</a>
+                    <a href="/">Core & Exbo</a>
                 </div>
             </div>
         </div>
@@ -161,9 +161,47 @@
     </div>
     <script src="/js/gallerys.js"></script>
 
+    <div class="social-panel-container">
+        <div class="social-panel">
+            <p>Created with <i class="fa fa-heart"></i> by
+                <a target="_blank" href="https://florin-pop.com">Team Mudra</a>
+            </p>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h4>Get in touch on</h4>
+            <ul>
+    
+                <li>
+                    <a href="https://www.linkedin.com/company/mudra-society-thapar-university-patiala/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/mudrasociety/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button class="floating-btn">
+        Get in Touch
+    </button>
     <div class="footer">
         Made with <i class="fa fa-heart"></i> by team Mudra
     </div>
+    <script>
+        const floating_btn = document.querySelector('.floating-btn');
+        const close_btn = document.querySelector('.close-btn');
+        const social_panel_container = document.querySelector('.social-panel-container');
+
+        floating_btn.addEventListener('click', () => {
+            social_panel_container.classList.toggle('visible')
+        });
+
+        close_btn.addEventListener('click', () => {
+            social_panel_container.classList.remove('visible')
+        });
+    </script>
 </body>
 
 </html>

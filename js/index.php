@@ -1,2 +1,3 @@
 <?php
-virtual('../html/home_page.html');
+header("Location: /");
+die();

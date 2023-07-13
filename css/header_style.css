@@ -310,9 +310,7 @@ img {
 }
 
 .content {
-    margin-top: 300px;
-    /* To create scrollable content */
-    height: 2000px;
+    margin-top: 100px;
 }
 
 .logo2 {

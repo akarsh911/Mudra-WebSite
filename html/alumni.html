@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/alumni.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/alumni.css">
+  <link rel="stylesheet" href="../css/header_style.css">
+  <link rel="stylesheet" href="../css/footer_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Document</title>
+  <title>Alumini</title>
 </head>
-<body>
 
+<body>
+  <div class="navbarm">
+
+    <div class="right_logo">
+      <a href="/html/events.html"><button class="community_btn" id="ip2">Events</button></a>
+      <a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
+      <a href="/html/home_page.html">
+        <div class="logo2">
+          <img src="../media/logo.png" alt="Logo">
+        </div>
+      </a>
+      <a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
+      <div class="dropdown">
+        <button class="dropbtn">Team
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="/">Secretaries</a>
+          <a href="/">Core & Exbo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    window.addEventListener('scroll', function () {
+
+      var navbar = document.querySelector('.navbarm');
+
+      //alert(video.offsetHeight);
+      if (window.pageYOffset > 10) {
+
+        navbar.style.height = '80px';
+        navbar.style.opacity = '1';
+      } else {
+
+        navbar.style.height = '0';
+        navbar.style.opacity = '0';
+      }
+    });
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+  </script>
   <br>
   <br>
   <br>
@@ -25,7 +84,7 @@
             <!-- <p>Meet Our talented Alumni</p> -->
           </div>
         </div>
-  
+
       </div>
     </div>
   </div>
@@ -37,8 +96,8 @@
 
   <div class="smaller">
 
-     <!--== Single Team Item ==-->
-     <div class="col-md-3">
+    <!--== Single Team Item ==-->
+    <div class="col-md-3">
       <div class="single-team">
         <div class="team-img">
           <img src="../media/images/arsh.jpg" alt="" class="img-responsive">
@@ -48,15 +107,17 @@
             <h3>Arsh Jain</h3>
             <p>General Secretary 2022-23</p>
           </div>
-          <p class="team-text"> 
-            <a href="https://instagram.com/_arsh_jain?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-            <a href="https://www.linkedin.com/in/arsh-jain-8121251b6" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-        </p>
+          <p class="team-text">
+            <a href="https://instagram.com/_arsh_jain?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
+                class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/arsh-jain-8121251b6" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+          </p>
         </div>
       </div>
     </div>
-     <!--== Single Team Item ==-->
-  <div class="col-md-3">
+    <!--== Single Team Item ==-->
+    <div class="col-md-3">
       <div class="single-team">
         <div class="team-img">
           <img src="../media/images/eshneet.jpg" alt="" class="img-responsive">
@@ -66,15 +127,17 @@
             <h3>Eshneet Arora</h3>
             <p>Finance Secretary 2022-23</p>
           </div>
-          <p class="team-text"> 
-            <a href="https://instagram.com/eshaarora_?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-            <a href="https://www.linkedin.com/in/eshneet-kaur-arora-3ba665191" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-        </p>
+          <p class="team-text">
+            <a href="https://instagram.com/eshaarora_?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
+                class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/eshneet-kaur-arora-3ba665191" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+          </p>
         </div>
       </div>
     </div>
-     <!--== Single Team Item ==-->
-  <div class="col-md-3">
+    <!--== Single Team Item ==-->
+    <div class="col-md-3">
       <div class="single-team">
         <div class="team-img">
           <img src="../media/images/manan.jpg" alt="" class="img-responsive">
@@ -84,15 +147,17 @@
             <h3>Manan Munjal</h3>
             <p>Core and Cultural Secretary 2022-23</p>
           </div>
-          <p class="team-text"> 
-            <a href="https://instagram.com/mananmunjal?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-            <a href="https://www.linkedin.com/in/mananmunjal" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-        </p>
+          <p class="team-text">
+            <a href="https://instagram.com/mananmunjal?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
+                class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/mananmunjal" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+          </p>
         </div>
       </div>
     </div>
-     <!--== Single Team Item ==-->
-  <div class="col-md-3">
+    <!--== Single Team Item ==-->
+    <div class="col-md-3">
       <div class="single-team">
         <div class="team-img">
           <img src="../media/images/sahil.jpg" alt="" class="img-responsive">
@@ -102,10 +167,12 @@
             <h3>Sahil Chugh</h3>
             <p>Core and Cultural Secretary 2022-23</p>
           </div>
-          <p class="team-text"> 
-            <a href="https://instagram.com/sahil.0911_?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-            <a href="https://www.linkedin.com/in/sahil-chugh-7052ab1a3" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-        </p>
+          <p class="team-text">
+            <a href="https://instagram.com/sahil.0911_?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
+                class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/sahil-chugh-7052ab1a3" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+          </p>
         </div>
       </div>
     </div>
@@ -116,82 +183,94 @@
 
     <!--== Single Team Item ==-->
     <div class="col-md-3">
-     <div class="single-team">
-       <div class="team-img">
-         <img src="../media/images/lovishBansal.jpg" alt="" class="img-responsive">
-       </div>
-       <div class="team-content">
-         <div class="team-info">
-           <h3>Lovish Bansal</h3>
-           <p>General Secretary 2021-22</p>
-         </div>
-         <p class="team-text"> 
-           <a href="https://instagram.com/lovishh_12?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-           <a href="https://www.linkedin.com/in/lovish-bansal-831169171" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-       </p>
-       </div>
-     </div>
-   </div>
-
-
-        <!--== Single Team Item ==-->
-        <div class="col-md-3">
-          <div class="single-team">
-            <div class="team-img">
-              <img src="../media/images/Manav.jpg" alt="" class="img-responsive">
-            </div>
-            <div class="team-content">
-              <div class="team-info">
-                <h3>Manav Sharma</h3>
-                <p>Finance Secretary 2021-22</p>
-              </div>
-              <p class="team-text">
-               <a href="https://instagram.com/__manavv.sharma__?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-                <a href="https://www.linkedin.com/in/manavsharma18" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a></p>
-            </div>
-          </div>
+      <div class="single-team">
+        <div class="team-img">
+          <img src="../media/images/lovishBansal.jpg" alt="" class="img-responsive">
         </div>
+        <div class="team-content">
+          <div class="team-info">
+            <h3>Lovish Bansal</h3>
+            <p>General Secretary 2021-22</p>
+          </div>
+          <p class="team-text">
+            <a href="https://instagram.com/lovishh_12?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
+                class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/lovish-bansal-831169171" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
 
-   <!--== Single Team Item ==-->
-   <div class="col-md-3">
-     <div class="single-team">
-       <div class="team-img">
-         <img src="../media/images/Kishita.jpg" alt="" class="img-responsive">
-       </div>
-       <div class="team-content">
-         <div class="team-info">
-           <h3>Kishita</h3>
-           <p>Core and Cultural Secretary 2021-22</p>
-         </div>
-         <p class="team-text">
-           <a href="https://instagram.com/kishita2000?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-           <a href="https://www.linkedin.com/in/kishita-gupta-421899188" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a></p>
-       </div>
-     </div>
-   </div>
-   <!--== Single Team Item ==-->
-   <div class="col-md-3">
-     <div class="single-team">
-       <div class="team-img">
-         <img src="../media/images/madhvanMehra.jpg" alt="" class="img-responsive">
-       </div>
-       <div class="team-content">
-         <div class="team-info">
-           <h3>Madhvan Menra</h3>
-           <p>Core and Cultural Secretary 2021-22</p>
-         </div>
-         <p class="team-text">
-           <a href="https://instagram.com/madhvan_menra?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-           <a href="https://www.linkedin.com/in/madhvan-menra-276bb1184" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a></p>
-       </div>
-     </div>
-   </div>
-  
- </div>
 
-   
-      
-      
-    
+    <!--== Single Team Item ==-->
+    <div class="col-md-3">
+      <div class="single-team">
+        <div class="team-img">
+          <img src="../media/images/Manav.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="team-content">
+          <div class="team-info">
+            <h3>Manav Sharma</h3>
+            <p>Finance Secretary 2021-22</p>
+          </div>
+          <p class="team-text">
+            <a href="https://instagram.com/__manavv.sharma__?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
+                class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/manavsharma18" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--== Single Team Item ==-->
+    <div class="col-md-3">
+      <div class="single-team">
+        <div class="team-img">
+          <img src="../media/images/Kishita.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="team-content">
+          <div class="team-info">
+            <h3>Kishita</h3>
+            <p>Core and Cultural Secretary 2021-22</p>
+          </div>
+          <p class="team-text">
+            <a href="https://instagram.com/kishita2000?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
+                class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/kishita-gupta-421899188" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--== Single Team Item ==-->
+    <div class="col-md-3">
+      <div class="single-team">
+        <div class="team-img">
+          <img src="../media/images/madhvanMehra.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="team-content">
+          <div class="team-info">
+            <h3>Madhvan Menra</h3>
+            <p>Core and Cultural Secretary 2021-22</p>
+          </div>
+          <p class="team-text">
+            <a href="https://instagram.com/madhvan_menra?igshid=NjIwNzIyMDk2Mg==" target="_blank"><i
+                class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/madhvan-menra-276bb1184" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+ 
+
+
 </body>
+
 </html>

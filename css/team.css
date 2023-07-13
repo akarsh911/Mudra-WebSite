@@ -11,7 +11,7 @@ body{
    background-image: url(../media/images/eventbg.jpg);
    background-size: cover;
    background-repeat: repeat;
-
+background-attachment: fixed;
    background-color: black;
   height: 100vh;
   margin: 0rem;
@@ -19,8 +19,24 @@ body{
 }
 
 .col-md-6 h1{
-    font-size: 50px;
-    color: wheat;
+  font-size: 100px;
+  font-weight: 800;
+ 
+  
+  position: relative;
+  overflow: hidden;
+  
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+ letter-spacing: 7px;
+  font-family: bodoni;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
   
   /*Team Section CSS*/
@@ -143,36 +159,40 @@ body{
     color: white;
   }
 
-  .second{
-    margin-left: 25%;
-    height: 450px;
-    width: 800px;
-    background-color: rgb(110, 145, 176);
-    margin-bottom: 40px;
-    mar
-  }
-  .second img{
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-  }
+  
+    .grp-img{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 30px;
+  }  
 
   .row_heading h1{
-    color: wheat;
-    font-size: 50px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /* font-style: italic; */
+    font-size:80px;
+ 
+    font-weight: 200;
+    /* letter-spacing: var(--ls); */
+    position: relative;
+    overflow: hidden;
+    /* background: var(--bg); */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: bodoni;
+    letter-spacing: 7px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
   }
 
   @media screen and (max-width: 500px) {
 
     .col-md-6 h1{
-      font-size: 60px;
-      color: wheat;
-      text-align: center;
-      margin-left: 40px;
+      margin-top: 30px;
+      font-size: 40px;
     }
 
       .team-overly-content{
@@ -199,6 +219,11 @@ body{
         -webkit-transform: translate(-50%, -50%) scale(0);
         transform: translate(-50%, -50%) scale(0);
     
+    }
+    .row_heading h1{
+      margin-top: 30px;
+      font-size:40px;
+      letter-spacing: 1px;
     }
     
   }

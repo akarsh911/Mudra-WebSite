@@ -182,6 +182,7 @@ body{
   .team-text :hover{
     color: #fff;
     background-color: #355c7d;
+    border-radius: 50%;
   }
 
   @media screen and (max-width: 500px) {   

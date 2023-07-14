@@ -403,7 +403,7 @@ padding:30px 15px 0px 110px;
 .team-block .inner-box .lower-content h3{
 position:relative;
 color:#bd0000;
-font-size:18px;
+font-size:20px;
 font-weight:700;
 line-height:1.3em;
 }
@@ -420,8 +420,8 @@ transition: all 0.4s;
 .team-block .inner-box .lower-content .designation{
 position:relative;
 margin-top:5px;
-color:#777777;
-font-size:14px;
+color:#bd0000;
+font-size:16px;
 }
 
 .team-block.style-two .inner-box .lower-content h3 a,

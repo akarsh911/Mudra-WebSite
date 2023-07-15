@@ -388,6 +388,24 @@ border-radius: 25px;
         margin-right: 10px;
     }
 
+    .team-block .inner-box .lower-content h3{
+        display: flex;
+        position: relative;
+        color:#bd0000;
+        font-size:20px;
+        font-weight:700;
+        line-height:1.3em;
+        }
+
+        
+.team-block .inner-box .lower-content .designation{
+    position:relative;
+    margin-top:5px;
+    color:#bd0000;
+    font-size:16px;
+    }
+    
+
     
 }
 

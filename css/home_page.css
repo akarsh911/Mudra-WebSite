@@ -180,5 +180,18 @@
        display: none;
    }
 
-   /* SOCIAL PANEL CSS */
+   .about{
+    font-size:25px;
+   margin-bottom:15px;
+   color:#d5d5d5;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   padding: 5px;
+   text-align: center;
+   font-family: bodoni;
+   @media only screen and (max-width: 600px){
+    font-size: 15px;
+   }
+   }
    

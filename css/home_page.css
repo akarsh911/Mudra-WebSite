@@ -5,19 +5,48 @@
    }
 
    body {
-    background: url('../media/images/eventbg2-01.png');
+    background: url('../media/images/eventbg2-01-02.png');
        background-color: black;
-       background-repeat: repeat;
+     background-attachment: fixed;
        background-size: cover;
        overflow-x: hidden;
        height: 100vh;
        font-family: 'Muli', sans-serif;
    }
+   .title {
+    font-size: 100px;
+    font-weight: 800;
+   
+    
+    position: relative;
+    overflow: hidden;
+    
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+   letter-spacing: 7px;
+    font-family: bodoni;
+      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+  }
+  @media only screen and (max-width: 600px){
+    .title{
+      margin-top: 30px;
+      font-size: 40px;
+     
+    }
+  }
+  
 
-   h1 {
+    h1 {
        margin: 50px 0 30px;
        text-align: center;
-   }
+   } 
 
    .faqs-container {
        margin: 0 auto;
@@ -33,14 +62,18 @@
        overflow: hidden;
        margin: 20px 0;
        transition: 0.3s ease;
-   }
+       font-family: bodoni;
+       @media only screen and (max-width: 600px){
+        font-size: 15px;
+      }
+    }
 
    .faq.active {
        background-color: #fff;
        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
    }
 
-   .faq.active::after,
+   /* .faq.active::after,
    .faq.active::before {
        color: #2ecc71;
        content: '\f075';
@@ -51,15 +84,43 @@
        top: 20px;
        left: 20px;
        z-index: 0;
-   }
+   } */
 
-   .faq.active::before {
+   /* .faq.active::before {
        color: #3498db;
        top: -10px;
        left: -30px;
        transform: rotateY(180deg);
-   }
+   } */
 
+
+  .title1 {
+    font-size:80px;
+  
+    font-weight: 200;
+    letter-spacing: var(--ls);
+    position: relative;
+    overflow: hidden;
+    /* background: var(--bg); */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: bodoni;
+    letter-spacing: 7px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+  }
+  @media only screen and (max-width: 600px){
+    .title1{
+      margin-top: 30px;
+      font-size:40px;
+    }
+  }
+  
    .faq-title {
        margin: 0 35px 0 0;
     
@@ -91,6 +152,9 @@
        height: 30px;
        width: 30px;
    }
+   .faq-toggle:hover{
+    color: black;
+   }
 
    .faq-toggle:focus {
        outline: none;
@@ -117,191 +181,4 @@
    }
 
    /* SOCIAL PANEL CSS */
-   .social-panel-container {
-       position: fixed;
-       right: 0;
-       bottom: 80px;
-       transform: translateX(100%);
-       transition: transform 0.4s ease-in-out;
-   }
-
-   .social-panel-container.visible {
-       transform: translateX(-10px);
-   }
-
-   .social-panel {
-       /* background-color: #fff; */
-       border-radius: 16px;
-       /* box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6); */
-       background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-     -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-       border-image:  radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-       border: 5px solid;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       font-family: 'Muli';
-       position: relative;
-       height: 169px;
-       width: 370px;
-       max-width: calc(100% - 10px);
-   }
-
-   .social-panel button.close-btn {
-       border: 0;
-       background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-     -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-       /* color: #ffffff; */
-       cursor: pointer;
-       font-size: 20px;
-       position: absolute;
-       top: 5px;
-       right: 5px;
-   }
-
-   .social-panel button.close-btn:focus {
-       outline: none;
-   }
-
-   .social-panel p {
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-  -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-       /* background-color: #001F61; */
-       border-radius: 0 0 10px 10px;
-       color: #fff;
-       font-size: 14px;
-       line-height: 18px;
-       padding: 2px 17px 6px;
-       position: absolute;
-       top: 0;
-       left: 50%;
-       margin: 0;
-       transform: translateX(-50%);
-       text-align: center;
-       width: 235px;
-   }
-
-   .social-panel p i {
-       margin: 0 5px;
-   }
-
-   .social-panel p a {
-       background-color:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-       text-decoration: none;
-   }
-
-   .social-panel h4 {
-       margin: 20px 0;
-       color: #ffffff;
-       font-family: 'Muli';
-       font-size: 14px;
-       line-height: 18px;
-       text-transform: uppercase;
-   }
-
-   .social-panel ul {
-       display: flex;
-       list-style-type: none;
-       padding: 0;
-       margin: 0;
-   }
-
-   .social-panel ul li {
-       margin: 0 10px;
-   }
-
-   .social-panel ul li a {
-       border: 1px solid #DCE1F2;
-       border-radius: 50%;
-       /* color: #001F61; */
-       font-size: 20px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 50px;
-       width: 50px;
-       text-decoration: none;
-       background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-     -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   }
-
-   .social-panel ul li a:hover {
-       border-color: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-       box-shadow: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-   }
-
-   .floating-btn {
-       border-radius: 26.5px;
-       background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-       border-image:  radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-      border: 1px solid;
-       color: #fff;
-       cursor: pointer;
-       font-size: 16px;
-       line-height: 20px;
-       padding: 12px 20px;
-       position: fixed;
-       bottom: 20px;
-       right: 20px;
-       z-index: 999;
-       
-       
-   }
-
-   .floating-btn:hover {
-       background-image: #ffffff;
-       color:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
-    }
-
-   .floating-btn:focus {
-       outline: none;
-   }
-
-   .floating-text {
-       /* background-color: #001F61; */
-       border-radius: 10px 10px 0 0;
-       color: #fff;
-       font-family: 'Muli';
-       padding: 7px 15px;
-       position: fixed;
-       bottom: 0;
-       left: 50%;
-       transform: translateX(-50%);
-       text-align: center;
-       z-index: 998;
-   }
-
-   .floating-text a {
-       color: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
-       text-decoration: none;
-   }
-
-   @media screen and (max-width: 480px) {
-
-       .social-panel-container.visible {
-           transform: translateX(0px);
-       }
-
-       .floating-btn {
-           right: 10px;
-       }
-   }
+   

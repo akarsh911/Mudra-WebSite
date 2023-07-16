@@ -257,24 +257,12 @@
     border-radius: 8px;
   } 
   
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
   
-  :root {
-    --bg: #000000;
-    --clr-1: #00c2ff;
-    --clr-2: #33ff8c;
-    --clr-3: #ffc640;
-    --clr-4: #e54cff;
-  
-    --blur: 1rem;
-    --fs: clamp(3rem, 8vw, 7rem);
-    --ls: clamp(-1.75px, -0.25vw, -3.5px);
-  }
   
   body {
     min-height: 100vh;
      display: grid; 
-     background-image: url(../media/images/eventbg.jpg);
+     background: url('../media/images/eventbg2-01-02.png');
      background-size: cover;
      background-repeat: repeat;
      
@@ -320,8 +308,8 @@
    
    letter-spacing: 7px;
     font-family: bodoni;
-      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 40%, #8A6E2F 50%, transparent 80%),
+      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 10%, #FFFFAC 5%, #D1B464 70%, #5d4a1f 90%, #5d4a1f 100%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     
@@ -348,8 +336,8 @@
     align-items: center;
     font-family: bodoni;
     letter-spacing: 7px;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 40%, #8A6E2F 50%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 10%, #FFFFAC 5%, #D1B464 70%, #5d4a1f 90%, #5d4a1f 100%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     
@@ -394,7 +382,7 @@
   .vdo{
       
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 30px;
     
@@ -402,3 +390,6 @@
   
 
  
+
+
+  

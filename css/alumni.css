@@ -33,7 +33,7 @@ body{
 
   min-height: 100vh;
    display: grid; 
-   background-image: url(../media/images/eventbg.jpg);
+   background: url('../media/images/eventbg2-01-02.png');
    background-size: cover;
    background-repeat: repeat;
   background-attachment: fixed;
@@ -141,7 +141,8 @@ body{
     font-size: 17px;
   }
   .single-team:hover .team-content{
-    background: #86E5FF;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    
   }
   .single-team .team-content .team-info h3 {
     text-transform: uppercase;
@@ -150,8 +151,21 @@ body{
     margin: 5px;
   }
   .single-team:hover .team-info h3{
-    color:beige;
+    /* color:beige; */
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 40%, #8A6E2F 50%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 10%, #FFFFAC 5%, #D1B464 70%, #5d4a1f 90%, #5d4a1f 100%);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
   }
+  .single-team:hover .team-info p{
+    /* color:beige; */
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 40%, #8A6E2F 50%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 10%, #FFFFAC 5%, #D1B464 70%, #5d4a1f 90%, #5d4a1f 100%);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+font-weight: 200;
+  }
+  
   .team-info p {
     margin-top: 15px;
     color: black;
@@ -180,9 +194,14 @@ body{
   }
 
   .team-text :hover{
-    color: #fff;
-    background-color: #355c7d;
-    border-radius: 50%;
+    
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 40%, #8A6E2F 50%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 10%, #FFFFAC 5%, #D1B464 70%, #5d4a1f 90%, #5d4a1f 100%);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+     /* color: #fff;
+    background-color: #355c7d; 
+    border-radius: 50%; */
   }
 
   @media screen and (max-width: 500px) {   

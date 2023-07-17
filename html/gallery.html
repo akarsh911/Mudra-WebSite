@@ -1,119 +1,101 @@
 <html lang="en">
-    <head>
-        <link href="../css/gallery.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/header_style.css">
-        <link rel="stylesheet" href="../css/footer_style.css">
-        <title>Gallery</title>
-        <script src="https://kit.fontawesome.com/56f1776af2.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script>
-            window.onload = function () {
-                document.getElementById('otp-container').className = 'loaded';
-            };
-        </script>
-    </head>
-    <body>
-        <div class="navbarm">
-        
-            <div class="right_logo">
-                <a href="/html/events2.html"><button class="community_btn" id="ip2">Events</button></a>
-                <a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
-                <a href="/html/home_page.html">
-                    <div class="logo2">
-                        <img src="../media/logo.png" alt="Logo">
-                    </div>
-                </a>
-                <a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
-                <div class="dropdown">
-                    <button class="dropbtn">Team
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="myDropdown">
-                        <a href="/html/fourth.html">Secretaries</a>
-                        <a href="/html/team.html">Core & Exbo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <script>
-          var logo = document.querySelector('.logo');
-            var navbar = document.querySelector('.navbarm');
+
+<head>
+    <link href="../css/gallery.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header_style.css">
+    <link rel="stylesheet" href="../css/footer_style.css">
+    <title>Gallery</title>
+    <script src="https://kit.fontawesome.com/56f1776af2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        window.onload = function () {
+            document.getElementById('otp-container').className = 'loaded';
+        };
+    </script>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <div class="header" id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("../html/header.html");
+        }); 
+    </script>
+
+
+    <script>
+        var navbar = document.querySelector('.header');
             navbar.style.height = '80px';
             navbar.style.opacity = '1';
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
+    </script>
+    <br>
+    <br>
+    <div id="otp-container">
+        <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/road.jpg" id="image-1" class="photo"
+            alt="" onclick="window.location.href='/html/gallery1.html'">
+        <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/tree_hugger.jpg" id="image-2"
+            class="photo" alt="" onclick="window.location.href='/html/gallery2.html'">
+        <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/sunset.jpg" id="image-3"
+            class="photo" alt="" onclick="window.location.href='/html/gallery3.html'">
+        <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/kiss.jpg" id="image-4" class="photo"
+            alt="" onclick="window.location.href='/html/gallery4.html'">
+        <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/moon.jpg" id="image-5" class="photo"
+            alt="" onclick="window.location.href='/html/gallery5.html'">
+        <div class="otp-callout">
+            <img src="../media/logo.png" id="logo" alt="">
 
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function (e) {
-                if (!e.target.matches('.dropbtn')) {
-                    var myDropdown = document.getElementById("myDropdown");
-                    if (myDropdown.classList.contains('show')) {
-                        myDropdown.classList.remove('show');
-                    }
-                }
-            }
-        </script>
-        <div id="otp-container">
-          <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/road.jpg" id="image-1" class="photo" alt="" onclick="window.location.href='/html/gallery1.html'">
-          <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/tree_hugger.jpg" id="image-2" class="photo" alt="" onclick="window.location.href='/html/gallery2.html'">
-            <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/sunset.jpg" id="image-3" class="photo" alt="" onclick="window.location.href='/html/gallery3.html'">
-            <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/kiss.jpg" id="image-4" class="photo" alt="" onclick="window.location.href='/html/gallery4.html'">
-            <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/moon.jpg" id="image-5" class="photo" alt="" onclick="window.location.href='/html/gallery5.html'">
-                <div class="otp-callout">
-                <img src="../media/logo.png" id="logo" alt="">
-              
-            </div>
-          
         </div>
-        <style>
-            img:hover{
-                cursor: pointer;
-            }
-        </style>
-        <div class="social-panel-container">
-            <div class="social-panel">
+
+    </div>
+    <style>
+        img:hover {
+            cursor: pointer;
+        }
+    </style>
+    <div class="social-panel-container">
+        <div class="social-panel">
             <p>Created with <i class="fa fa-heart"></i> by
                 Team Mudra
             </p>
-                <button class="close-btn"><i class="fas fa-times"></i></button>
-                <h4>Get in touch on</h4>
-                <ul>
-        
-                    <li>
-                        <a href="https://www.linkedin.com/company/mudra-society-thapar-university-patiala/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/mudrasociety/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <button class="floating-btn">
-            Get in Touch
-        </button>
-        <div class="footer">
-            Made with <i class="fa fa-heart"></i> by team Mudra
-        </div>
-        <script>
-            const floating_btn = document.querySelector('.floating-btn');
-            const close_btn = document.querySelector('.close-btn');
-            const social_panel_container = document.querySelector('.social-panel-container');
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h4>Get in touch on</h4>
+            <ul>
 
-            floating_btn.addEventListener('click', () => {
-                social_panel_container.classList.toggle('visible')
-            });
+                <li>
+                    <a href="https://www.linkedin.com/company/mudra-society-thapar-university-patiala/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/mudrasociety/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button class="floating-btn">
+        Get in Touch
+    </button>
+    <br>
+    <br>
+    <div class="footer">
+        Made with <i class="fa fa-heart"></i> by team Mudra
+    </div>
+    <script>
+        const floating_btn = document.querySelector('.floating-btn');
+        const close_btn = document.querySelector('.close-btn');
+        const social_panel_container = document.querySelector('.social-panel-container');
 
-            close_btn.addEventListener('click', () => {
-                social_panel_container.classList.remove('visible')
-            });
-        </script>
-    </body>
+        floating_btn.addEventListener('click', () => {
+            social_panel_container.classList.toggle('visible')
+        });
+
+        close_btn.addEventListener('click', () => {
+            social_panel_container.classList.remove('visible')
+        });
+    </script>
+</body>
+
 </html>
-

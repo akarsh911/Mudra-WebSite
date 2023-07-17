@@ -19,46 +19,30 @@
 </head>
 
 <body>
-	<div class="navbarm">
-
-		<div class="right_logo">
-			<a href="/html/events2.html"><button class="community_btn" id="ip2">Events</button></a>
-			<a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
-			<a href="/html/home_page.html">
-				<div class="logo2">
-					<img src="../media/logo.png" alt="Logo">
-				</div>
-			</a>
-			<a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
-			<div class="dropdown">
-				<button class="dropbtn">Team
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content" id="myDropdown">
-					<a href="/html/fourth.html">Secretaries</a>
-					<a href="/html/team.html">Core & Exbo</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="header" id="header"></div>
 	<script>
-		var logo = document.querySelector('.logo');
-		var navbar = document.querySelector('.navbarm');
-		navbar.style.height = '80px';
-		navbar.style.opacity = '1';
-		function myFunction() {
-			document.getElementById("myDropdown").classList.toggle("show");
-		}
+		$(function () {
+			$("#header").load("../html/header.html");
+		}); 
+	</script>
+	
+	
+	<script>
+		window.addEventListener('scroll', function () {
 
-		// Close the dropdown if the user clicks outside of it
-		window.onclick = function (e) {
-			if (!e.target.matches('.dropbtn')) {
-				var myDropdown = document.getElementById("myDropdown");
-				if (myDropdown.classList.contains('show')) {
-					myDropdown.classList.remove('show');
-				}
+			var navbar = document.querySelector('.header');
+
+			//alert(video.offsetHeight);
+			if (window.pageYOffset > 10) {
+
+				navbar.style.height = '80px';
+				navbar.style.opacity = '1';
+			} else {
+
+				navbar.style.height = '0';
+				navbar.style.opacity = '0';
 			}
-		}
+		});
 	</script>
 	<br>
 	<br>
@@ -72,7 +56,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
-					<div class="team-1-wrap team-style-2">
+					<div class="team-1-wrap ">
 						<div class="team-img">
 							<img src="https://trkarrels.com/wp-content/uploads/2016/09/John_Web_Image.jpg"
 								alt="team image" class="img-fluid">
@@ -92,7 +76,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<div class="team-1-wrap team-style-2">
+					<div class="team-1-wrap ">
 						<div class="team-img">
 							<img src="https://trkarrels.com/wp-content/uploads/2016/09/John_Web_Image.jpg"
 								alt="team image" class="img-fluid">
@@ -113,7 +97,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<div class="team-1-wrap team-style-2">
+					<div class="team-1-wrap ">
 						<div class="team-img">
 							<img src="http://tourblue.com/assets/frontend/images/team/tourblue-team-indika.jpg"
 								alt="team image" class="img-fluid">
@@ -134,7 +118,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<div class="team-1-wrap team-style-2">
+					<div class="team-1-wrap ">
 						<div class="team-img">
 							<img src="https://trkarrels.com/wp-content/uploads/2016/09/John_Web_Image.jpg"
 								alt="team image" class="img-fluid">
@@ -154,19 +138,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
 
-	<section class="team-section mt-5 mb-5">
-		<div class="container">
-			<!-- <div class="row justify-content-center mb-5">
-			<div class="col-md-6 text-center">
-			  <h3>Our Team Members</h3>
-			</div>
-		  </div> -->
 			<div class="row">
-				<div class="col-md-3 col-sm-6 p-0">
-					<div class="team-1-wrap team-style-2">
+				<div class="col-md-3 col-sm-6">
+					<div class="team-1-wrap ">
 						<div class="team-img">
 							<img src="https://trkarrels.com/wp-content/uploads/2016/09/John_Web_Image.jpg"
 								alt="team image" class="img-fluid">
@@ -185,8 +160,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 p-0">
-					<div class="team-1-wrap team-style-2">
+				<div class="col-md-3 col-sm-6">
+					<div class="team-1-wrap ">
 						<div class="team-img">
 							<img src="https://trkarrels.com/wp-content/uploads/2016/09/John_Web_Image.jpg"
 								alt="team image" class="img-fluid">
@@ -206,8 +181,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 p-0">
-					<div class="team-1-wrap team-style-2">
+				<div class="col-md-3 col-sm-6">
+					<div class="team-1-wrap ">
 						<div class="team-img">
 							<img src="http://tourblue.com/assets/frontend/images/team/tourblue-team-indika.jpg"
 								alt="team image" class="img-fluid">
@@ -227,8 +202,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 p-0">
-					<div class="team-1-wrap team-style-2">
+				<div class="col-md-3 col-sm-6">
+					<div class="team-1-wrap ">
 						<div class="team-img">
 							<img src="https://trkarrels.com/wp-content/uploads/2016/09/John_Web_Image.jpg"
 								alt="team image" class="img-fluid">
@@ -250,6 +225,8 @@
 			</div>
 		</div>
 	</section>
+
+	
 
 	<div class="row_heading">
 		<h1>Core</h1>

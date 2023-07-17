@@ -32,49 +32,35 @@
 </head>
 
 <body>
-   <div class="navbarm">
-  
-    <div class="right_logo">
-      <a href="/html/events2.html"><button class="community_btn" id="ip2">Events</button></a>
-      <a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
-      <a href="/html/home_page.html">
-        <div class="logo2">
-          <img src="../media/logo.png" alt="Logo">
-        </div>
-      </a>
-      <a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
-      <div class="dropdown">
-        <button class="dropbtn">Team
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="myDropdown">
-          <a href="/html/fourth.html">Secretaries</a>
-          <a href="/html/team.html">Core & Exbo</a>
-        </div>
-      </div>
-    </div>
-  </div> 
-  
-  
-  <script>
-    var navbar = document.querySelector('.navbarm');
-    navbar.style.height = '80px';
-    navbar.style.opacity = '1';
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <div class="header" id="header"></div>
+      <script>
+        $(function () {
+          $("#header").load("../html/header.html");
+        }); 
+      </script>
+      
+      
+      <script>
+        window.addEventListener('scroll', function () {
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function (e) {
-      if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
-        }
-      }
-    }
-  </script>
+          var navbar = document.querySelector('.header');
 
+          //alert(video.offsetHeight);
+          if (window.pageYOffset > 10) {
+
+            navbar.style.height = '80px';
+            navbar.style.opacity = '1';
+          } else {
+
+            navbar.style.height = '0';
+            navbar.style.opacity = '0';
+          }
+        });
+      </script>
+<br>
+<br>
+<br>
 
   <div class="content0">
     <h1 class="title"> OUR EVENTS
@@ -113,7 +99,7 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-7 col-12 order-md-1 order-2">
-                <h4>MUDRA-NITE
+                <h4>MUDRANITE
                 </h4>
                 <p>Mudra Nite is a much-awaited event where we extend a warm welcome to our talented new batch. It
                   serves as a platform for them to shine, allowing them to showcase their unique talents and potential
@@ -132,7 +118,7 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-7 col-12 order-md-1 order-2">
-                <h4>SUR-NITE
+                <h4>SURNITE
                 </h4>
                 <p>Sur Nite is a captivating evening where the stage comes alive with the convergence of melodious
                   voices and enchanting musical instruments. Talented performers showcase their skills, casting a spell
@@ -199,14 +185,15 @@
     </h1>
 
   </div>
-  <div class="vdo">
-<iframe width="853" height="480"
-  src="https://www.youtube.com/embed/cZRT-hAaruM?loop=1&amp;playlist=cZRT-hAaruM&amp;modestbranding=1&amp;rel=0"
-  title="Mudra Izhaar After movie 2023" frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  style="border: 3px solid white; border-radius: 10px;"></iframe>
 
+  <div class="video-container">
+    <iframe width="853" height="480"
+      src="https://www.youtube.com/embed/cZRT-hAaruM?loop=1&amp;playlist=cZRT-hAaruM&amp;modestbranding=1&amp;rel=0"
+      title="Mudra Izhaar After movie 2023" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+      style="border: 3px solid white; border-radius: 10px;"></iframe>
   </div>
+
   <!-- <div class="video-container">
    <video src="../media/videos/MUDRA.mp4" autoplay loop></video>
   </div> -->

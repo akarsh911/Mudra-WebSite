@@ -76,10 +76,11 @@
   #myCarousel .carousel-item a{    background: transparent;font-size:20px; color:#FFF; padding:13px 32px; display:inline-block;   }
   #myCarousel .carousel-item a:hover{ 
     text-decoration: none;
-    box-shadow: 10px 10px 20px rgba(242, 237, 237,0.1);
-    color:rgb(54, 144, 246);
-    border-radius:10px;
-    
+     box-shadow: 10px 10px 20px rgba(242, 237, 237,0.1); 
+    background:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
                                 } 
   @media only screen and (max-width: 600px){
@@ -273,7 +274,7 @@
   }
   
   *,
-  *::before,
+ *::before, 
   *::after {
     font-family: inherit;
     box-sizing: border-box;

@@ -49,6 +49,7 @@
     letter-spacing: 1.5px;
     font-size: 20px;
     font-weight: 900;
+  
 }
 
 body{
@@ -281,8 +282,8 @@ background-image: linear-gradient(to bottom, #ffca08 0%, #f70067 100%); */
 /* background: rgb(51,225,29);
 background: linear-gradient(90deg, rgba(51,225,29,1) 16%, rgba(208,46,34,1) 37%, rgba(241,165,12,0.9542410714285714) 54%, rgba(57,125,47,0.9542410714285714)88%);
  */
- background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
-      radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
+ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 40%, #8A6E2F 50%, transparent 80%),
+ radial-gradient(ellipse farthest-corner at left top, #FFFFFF 10%, #FFFFAC 5%, #D1B464 70%, #5d4a1f 90%, #5d4a1f 100%);
 }
 
 .team-block .inner-box:hover::after{
@@ -334,9 +335,27 @@ height: 100%;
 display:block;
 border-radius: 25px;
 }
+.pname{
+     display: flex;
+     justify-content: center;
+     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 40%, #8A6E2F 50%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 10%, #FFFFAC 5%, #D1B464 70%, #5d4a1f 90%, #5d4a1f 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
 
 @media screen and (max-width: 500px){
+    .lower-content{
+        font-size: 10px;
+        padding: 20px;
+        flex: none;
+    }
+   
+    .pname{
+        font-size: 20px;
 
+    }
 
     .row-clearfix{
         display: block;
@@ -381,11 +400,15 @@ border-radius: 25px;
         text-transform:capitalize;
         }
 
-    .heading{
+    .heading h1{
         display: block;
         text-align: left;
-        margin-left: 30px;
-        margin-right: 10px;
+        /* margin-left: 30px;
+        margin-right: 10px; */
+        padding: 30px;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
     }
 
     .team-block .inner-box .lower-content h3{
@@ -439,7 +462,7 @@ transition: all 0.4s;
 position:relative;
 margin-top:5px;
 color:#bd0000;
-font-size:16px;
+font-size:14px;
 }
 
 .team-block.style-two .inner-box .lower-content h3 a,

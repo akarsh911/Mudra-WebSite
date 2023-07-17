@@ -32,48 +32,31 @@
 </head>
 
 <body>
-    <div class="navbarm">
-  
-    <div class="right_logo">
-      <a href="/html/events2.html"><button class="community_btn" id="ip2">Events</button></a>
-      <a href="/html/gallery.html"><button class="community_btn">Gallery</button></a>
-      <a href="/html/home_page.html">
-        <div class="logo2">
-          <img src="../media/logo.png" alt="Logo">
-        </div>
-      </a>
-      <a href="/html/alumni.html"><button class="community_btn" id="ip1">Alumini</button></a>
-      <div class="dropdown">
-        <button class="dropbtn">Team
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="myDropdown">
-          <a href="/html/fourth.html">Secretaries</a>
-          <a href="/html/team.html">Core & Exbo</a>
-        </div>
-      </div>
-    </div>
-  </div> 
-  
-  
-  <script>
-    var navbar = document.querySelector('.navbarm');
-    navbar.style.height = '80px';
-    navbar.style.opacity = '1';
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
+      <div class="header" id="header"></div>
+      <script>
+        $(function () {
+          $("#header").load("../html/header.html");
+        }); 
+      </script>
+      
+      
+      <script>
+        window.addEventListener('scroll', function () {
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function (e) {
-      if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
-        }
-      }
-    }
-  </script>
+          var navbar = document.querySelector('.header');
+
+          //alert(video.offsetHeight);
+          if (window.pageYOffset > 10) {
+
+            navbar.style.height = '80px';
+            navbar.style.opacity = '1';
+          } else {
+
+            navbar.style.height = '0';
+            navbar.style.opacity = '0';
+          }
+        });
+      </script>
 
 
   <div class="content0">

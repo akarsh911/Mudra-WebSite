@@ -1,22 +1,11 @@
-
-<link rel="stylesheet" href="../css/header_style.css">
+<link rel="stylesheet" href="/css/header_style.css">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
     /* Add the required styles for the navbar and logo */
 
-   .custom-navbar{
-    display: none;
-   }
-    /* Media query for mobile view */
-    @media screen and (max-width: 600px) {
-        .navbarm{
-            display: none;
-        }
-         .custom-navbar {
+    .custom-navbar {
         position: fixed;
-        padding-left: 20px;
-        padding-right: 20px;
         top: 0;
         left: 0;
         width: 100%;
@@ -25,7 +14,9 @@
         z-index: 999;
         display: flex;
         align-items: center;
+        padding: 0 24px;
         justify-content: space-between;
+        visibility: hidden;
     }
 
     .custom-logo-wrapper {
@@ -34,19 +25,19 @@
     }
 
     .custom-logo-img {
-        height: 100px;
+        height: 100%;
         width: auto;
     }
 
     /* The dropdown container */
     .custom-dropdown {
-        position: relative;
+
         display: inline-block;
     }
 
     /* Dropdown button */
     .custom-dropdown .custom-dropbtn {
-        font-size: 16px;
+        font-size: 24px;
         border: none;
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
@@ -57,20 +48,23 @@
         font-family: inherit;
         /* Important for vertical align on mobile phones */
         margin: 0;
+        margin-right: 50px;
     }
 
     /* Add a red background color to navbar links on hover */
     .custom-navbar a:hover,
     .custom-dropdown:hover .custom-dropbtn {
-        background-color: #271ed8;
+        background-color: #3f36f4;
     }
 
     /* Dropdown content (hidden by default) */
     .custom-dropdown-content {
         display: none;
+        right: 0px;
+        margin-right: 70px;
         position: absolute;
         background-color: #000000;
-        min-width: 160px;
+        min-width: 250px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
@@ -78,23 +72,29 @@
     /* Links inside the dropdown */
     .custom-dropdown-content a {
         color: rgb(255, 255, 255);
-        padding: 12px 16px;
+        padding: 20px 25px;
+        font-size: 22px;
         text-decoration: none;
         display: block;
     }
 
     /* Add a grey background color to dropdown links on hover */
     .custom-dropdown-content a:hover {
-        background-color: #271ed8;
+        background-color: #ddd;
     }
 
-    /* Show the dropdown menu on hover */
     .custom-dropdown:hover .custom-dropdown-content {
         display: block;
     }
 
+    /* Media query for mobile view */
+    @media screen and (min-width:0px) and (max-width:1000px) {
+
+
+        /* Show the dropdown menu on hover */
+
         .custom-navbar {
-            justify-content: flex-start;
+            visibility: visible;
         }
 
         .custom-logo-wrapper {
@@ -145,7 +145,6 @@
         </div>
     </div>
 </div>
-
 <div class="navbarm">
 
     <div class="right_logo">

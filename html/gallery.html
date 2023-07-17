@@ -25,22 +25,12 @@
 
 
     <script>
-        window.addEventListener('scroll', function () {
-
-            var navbar = document.querySelector('.header');
-
-            //alert(video.offsetHeight);
-            if (window.pageYOffset > 10) {
-
-                navbar.style.height = '80px';
-                navbar.style.opacity = '1';
-            } else {
-
-                navbar.style.height = '0';
-                navbar.style.opacity = '0';
-            }
-        });
+        var navbar = document.querySelector('.header');
+            navbar.style.height = '80px';
+            navbar.style.opacity = '1';
     </script>
+    <br>
+    <br>
     <div id="otp-container">
         <img src="http://fixturemedia.com/fixturemedia_2013_html5/mobile_otp/images/road.jpg" id="image-1" class="photo"
             alt="" onclick="window.location.href='/html/gallery1.html'">
@@ -88,6 +78,8 @@
     <button class="floating-btn">
         Get in Touch
     </button>
+    <br>
+    <br>
     <div class="footer">
         Made with <i class="fa fa-heart"></i> by team Mudra
     </div>

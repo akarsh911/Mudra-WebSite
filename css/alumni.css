@@ -71,8 +71,9 @@ body{
       radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   }
+
+
   @media only screen and (max-width: 600px){
     .section-title h1 {
       margin-top: 30px;
@@ -91,6 +92,8 @@ body{
     color: wheat;
   }
   .single-team{
+    height: 330px;
+    width: 300px;
     padding-bottom: 70px;
     position: relative;
     z-index: 1;
@@ -104,6 +107,8 @@ body{
     position: relative;
     z-index: 5;
     overflow: hidden;
+    height: 250px;
+    width: 300px;
   }
   .team-img img{
     width: 100%;
@@ -114,7 +119,7 @@ body{
   }
   .team-content {
     height: 80px;
-    width: 100%;
+    width: 300px;
     position: absolute;
     text-align: center;
     overflow: hidden;
@@ -231,6 +236,9 @@ font-weight: 200;
     }
     
   }
+
+
+  
 
  
   

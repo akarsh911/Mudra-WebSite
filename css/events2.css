@@ -120,6 +120,11 @@
     backface-visibility: hidden;
     -webkit-perspective: 1000px;
     perspective: 1000px;
+    @media only screen and (max-width: 600px){
+     padding-left: 30px; 
+     
+    }
+
   }
   .carousel-fade .carousel-item {
   opacity: 0;

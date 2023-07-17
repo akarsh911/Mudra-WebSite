@@ -399,10 +399,12 @@ border-radius: 25px;
 
         
 .team-block .inner-box .lower-content .designation{
-    position:relative;
+    position: relative;
+    display: flex;
     margin-top:5px;
     color:#bd0000;
     font-size:16px;
+    margin-bottom: 40px;
     }
     
 

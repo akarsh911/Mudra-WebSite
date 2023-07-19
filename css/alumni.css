@@ -49,13 +49,14 @@ body{
   justify-content: space-evenly;
   flex-wrap: wrap; 
   height: 100%;
+  padding: 10px;
 
 }
 
 .bigger{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: 30px;
   flex-wrap: wrap; 
   height: 100%;
 
@@ -71,13 +72,13 @@ body{
 
 }
 
-.container{
+/* .container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: 20px;
     flex-wrap: wrap;
     height: 100%;
-}
+} */
 
 .section-title h1 {
     

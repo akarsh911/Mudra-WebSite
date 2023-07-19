@@ -199,3 +199,9 @@
     width: 80%;
     height: 80%;
    }
+
+  .container-fluid{
+    width: 1024px;
+    padding: 30px;
+    padding-top: 50px;
+  }

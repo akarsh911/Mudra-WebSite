@@ -44,21 +44,22 @@ body{
 }
 
 .smaller{
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap; 
-  height: 100%;
-  padding: 10px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: start;
+  justify-self: center;
 
 }
 
 .bigger{
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: 30px;
-  flex-wrap: wrap; 
-  height: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: start;
+  justify-self: center;
 
 }
 

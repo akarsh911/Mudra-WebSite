@@ -127,7 +127,7 @@ width:40px;
 margin-top:16px !important;
 }
 
-.sec-title .separator:before{
+/* .sec-title .separator:before{
 position:absolute;
 content:'';
 left:0px;
@@ -156,7 +156,7 @@ height:5px;
 margin-left:-5px;
 display:inline-block;
 background-color:#bd0000;
-}
+} */
 
 .sec-title h2{
 position:relative;

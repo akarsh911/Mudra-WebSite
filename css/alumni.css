@@ -47,6 +47,7 @@ body{
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
+  justify-content: center;
   flex-wrap: wrap;
   -ms-flex-align: start;
   justify-self: center;
@@ -60,7 +61,7 @@ body{
   flex-wrap: wrap;
   -ms-flex-align: start;
   justify-self: center;
-
+justify-content: center;
 }
 
 .single-team{

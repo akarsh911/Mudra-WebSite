@@ -12,7 +12,7 @@
 <body>
     <div class="logoc">
         <div class="logo">
-            <img src="../media/logo.png" alt="Logo">
+            <img src="../media/logo.png" class="mudra" alt="Logo">
         </div>
         <video autoplay muted loop id="myVideo" class="video">
             <source src="../media/MUDRA.mp4" type="video/mp4">
@@ -31,7 +31,7 @@
         window.addEventListener('scroll', function () {
             var logo = document.querySelector('.logo');
             var navbar = document.querySelector('.header');
-
+            var video=document.getElementById("myVideo");
             //alert(video.offsetHeight);
             if (window.pageYOffset > 10) {
                 logo.style.width = 'auto';
@@ -40,7 +40,8 @@
                 navbar.style.opacity = '1';
             } else {
                 logo.style.width = 'auto';
-                logo.style.height = '500px';
+                logo.style.height = video.style.height;
+                
                 navbar.style.height = '0';
                 navbar.style.opacity = '0';
             }

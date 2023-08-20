@@ -50,7 +50,7 @@
 
    .faqs-container {
        margin: 0 auto;
-       max-width: 600px;
+       max-width:95%;
    }
 
    .faq {
@@ -188,6 +188,8 @@
    justify-content:center;
    align-items: center;
    padding: 5px;
+   padding-left: 5vw;
+    padding-right: 5vw;
    text-align: center;
    font-family: bodoni;
    
@@ -196,6 +198,9 @@
     .about{
       font-size: 15px;
     }
+   }
+   .mudra{
+    height: 80%;
    }
    .video{
     width: 80%;

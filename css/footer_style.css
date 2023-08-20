@@ -168,6 +168,7 @@
     right: 0;
     bottom: 80px;
     transform: translateX(100%);
+    width: fit-content;
     transition: transform 0.4s ease-in-out;
     border-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
@@ -321,6 +322,7 @@
 
 .floating-btn:hover {
     background-image: #ffffff;
+    background-color: #000000ba;
     color:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 5%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 100%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 100%, #5d4a1f 100%, #5d4a1f 10%);
     -webkit-background-clip: text;

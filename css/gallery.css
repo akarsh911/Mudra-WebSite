@@ -9,7 +9,6 @@ Result Skip Results Iframe body {
     overflow: hidden;
     position: fixed;
     top: 0;
-    height: 100vh;
     width: 100vw;
     bottom: 0;
     left: 0;

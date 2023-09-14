@@ -241,7 +241,7 @@ position:relative;
 
 .team-block .inner-box{
 position:relative;
-padding:40px 70px 28px 0px;
+padding:40px 60px 28px 10px;
 }
 
 .team-block .inner-box:before{
@@ -286,8 +286,18 @@ background: linear-gradient(90deg, rgba(51,225,29,1) 16%, rgba(208,46,34,1) 37%,
  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 10%, #FFFFAC 5%, #D1B464 70%, #5d4a1f 90%, #5d4a1f 100%);
 }
 
+@media only screen and (max-width: 600px){
+    .team-block .inner-box::after{
+        left:50px;
+    }
+    .team-block .inner-box:hover::after{
+        width:79%;
+        }
+
+}
+
 .team-block .inner-box:hover::after{
-width:81%;
+width:80%;
 }
 
 .team-block .inner-box .social-icons{
@@ -338,6 +348,7 @@ border-radius: 25px;
 }
 .pname{
      display: flex;
+     height: 40px;
      justify-content: center;
      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 40%, #8A6E2F 50%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 10%, #FFFFAC 5%, #D1B464 70%, #5d4a1f 90%, #5d4a1f 100%);
@@ -423,7 +434,7 @@ border-radius: 25px;
         display: flex;
         position: relative;
         color:#bd0000;
-        font-size:20px;
+        font-size: larger;
         font-weight:700;
         line-height:1.3em;
         }
@@ -434,7 +445,7 @@ border-radius: 25px;
     display: flex;
     margin-top:5px;
     color:#bd0000;
-    font-size:20px;
+    font-size:60px;
     margin-bottom: 40px;
     }
     
